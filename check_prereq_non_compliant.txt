@@ -1,0 +1,2409 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200415142132
+Username: DESKTOP-P8HTU4V\User
+RunAs User: DESKTOP-P8HTU4V\User
+Configuration Name: 
+Machine: DESKTOP-P8HTU4V (Microsoft Windows NT 10.0.18363.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 956
+PSVersion: 5.1.18362.145
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.145
+BuildVersion: 10.0.18362.145
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\checkprereqs.txt
+PS C:\Users\User> Invoke-AtomicTest All -CheckPrereqs
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+CheckPrereq's for:
+T1002-1 Compress Data for Exfiltration With PowerShell
+
+Prerequisites met:
+T1002-1 Compress Data for Exfiltration With PowerShell
+
+CheckPrereq's for:
+T1002-2 Compress Data for Exfiltration With Rar
+
+Prerequisites not met: T1002-2 Compress Data for Exfiltration With Rar
+	[*] Rar tool must be installed at specified location (%programfiles%/WinRAR/Rar.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-1 Powershell Mimikatz
+
+Prerequisites not met: T1003-1 Powershell Mimikatz
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-2 Gsecdump
+
+Prerequisites not met: T1003-2 Gsecdump
+	[*] Elevation required but not provided
+	[*] Gsecdump must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\gsecdump.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-3 Windows Credential Editor
+
+Prerequisites not met: T1003-3 Windows Credential Editor
+	[*] Elevation required but not provided
+	[*] Windows Credential Editor must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\wce.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-4 Registry dump of SAM, creds, and secrets
+
+Prerequisites not met: T1003-4 Registry dump of SAM, creds, and secrets
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-5 Dump LSASS.exe Memory using ProcDump
+
+Prerequisites not met: T1003-5 Dump LSASS.exe Memory using ProcDump
+	[*] Elevation required but not provided
+	[*] ProcDump tool from Sysinternals must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\procdump.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-6 Dump LSASS.exe Memory using comsvcs.dll
+
+Prerequisites not met: T1003-6 Dump LSASS.exe Memory using comsvcs.dll
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-7 Dump LSASS.exe Memory using direct system calls and API unhooking
+
+Prerequisites not met: T1003-7 Dump LSASS.exe Memory using direct system calls and API unhooking
+	[*] Elevation required but not provided
+	[*] Dumpert executable must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\Outflank-Dumpert.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-9 Offline Credential Theft With Mimikatz
+
+Prerequisites not met: T1003-9 Offline Credential Theft With Mimikatz
+	[*] Elevation required but not provided
+	[*] Mimikatz must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1003\bin\mimikatz.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-10 Dump Active Directory Database with NTDSUtil
+
+Prerequisites not met: T1003-10 Dump Active Directory Database with NTDSUtil
+	[*] Elevation required but not provided
+	[*] Target must be a Domain Controller
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-11 Create Volume Shadow Copy with NTDS.dit
+
+Prerequisites not met: T1003-11 Create Volume Shadow Copy with NTDS.dit
+	[*] Elevation required but not provided
+	[*] Target must be a Domain Controller
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-12 Copy NTDS.dit from Volume Shadow Copy
+
+Prerequisites not met: T1003-12 Copy NTDS.dit from Volume Shadow Copy
+	[*] Elevation required but not provided
+	[*] Target must be a Domain Controller
+	[*] Volume shadow copy must exist
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-13 GPP Passwords (findstr)
+
+Prerequisites not met: T1003-13 GPP Passwords (findstr)
+	[*] Computer must be domain joined
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-14 GPP Passwords (Get-GPPPassword)
+
+Prerequisites not met: T1003-14 GPP Passwords (Get-GPPPassword)
+	[*] Get-GPPPassword PowerShell Script must exist at C:\AtomicRedTeam\atomics\T1003\src\Get-GPPPassword.ps1
+	[*] Computer must be domain joined
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-15 LSASS read with pypykatz
+
+Prerequisites not met: T1003-15 LSASS read with pypykatz
+	[*] Elevation required but not provided
+	[*] Computer must have python 3 installed
+	[*] pypykatz must be installed and part of PATH
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1003-16 Registry parse with pypykatz
+
+Prerequisites not met: T1003-16 Registry parse with pypykatz
+	[*] Elevation required but not provided
+	[*] Computer must have python 3 installed
+	[*] pypykatz must be installed and part of PATH
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1004-1 Winlogon Shell Key Persistence - PowerShell
+
+Prerequisites met:
+T1004-1 Winlogon Shell Key Persistence - PowerShell
+
+CheckPrereq's for:
+T1004-2 Winlogon Userinit Key Persistence - PowerShell
+
+Prerequisites met:
+T1004-2 Winlogon Userinit Key Persistence - PowerShell
+
+CheckPrereq's for:
+T1004-3 Winlogon Notify Key Logon Persistence - PowerShell
+
+Prerequisites met:
+T1004-3 Winlogon Notify Key Logon Persistence - PowerShell
+
+CheckPrereq's for:
+T1007-1 System Service Discovery
+
+Prerequisites not met: T1007-1 System Service Discovery
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1007-2 System Service Discovery - net.exe
+
+Prerequisites met:
+T1007-2 System Service Discovery - net.exe
+
+CheckPrereq's for:
+T1010-1 List Process Main Windows - C# .NET
+
+Prerequisites met:
+T1010-1 List Process Main Windows - C# .NET
+
+CheckPrereq's for:
+T1012-1 Query Registry
+
+Prerequisites not met: T1012-1 Query Registry
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1014-3 Windows Signed Driver Rootkit Test
+
+Prerequisites met:
+T1014-3 Windows Signed Driver Rootkit Test
+
+CheckPrereq's for:
+T1015-1 Attaches Command Prompt as a Debugger to a List of Target Processes
+
+Prerequisites not met: T1015-1 Attaches Command Prompt as a Debugger to a List of Target Processes
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1016-1 System Network Configuration Discovery
+
+Prerequisites met:
+T1016-1 System Network Configuration Discovery
+
+CheckPrereq's for:
+T1016-2 List Windows Firewall Rules
+
+Prerequisites met:
+T1016-2 List Windows Firewall Rules
+
+CheckPrereq's for:
+T1016-4 System Network Configuration Discovery (TrickBot Style)
+
+Prerequisites met:
+T1016-4 System Network Configuration Discovery (TrickBot Style)
+
+CheckPrereq's for:
+T1016-5 List Open Egress Ports
+
+Prerequisites met:
+T1016-5 List Open Egress Ports
+
+CheckPrereq's for:
+T1018-1 Remote System Discovery - net
+
+Prerequisites met:
+T1018-1 Remote System Discovery - net
+
+CheckPrereq's for:
+T1018-2 Remote System Discovery - net group Domain Computers
+
+Prerequisites met:
+T1018-2 Remote System Discovery - net group Domain Computers
+
+CheckPrereq's for:
+T1018-3 Remote System Discovery - nltest
+
+Prerequisites met:
+T1018-3 Remote System Discovery - nltest
+
+CheckPrereq's for:
+T1018-4 Remote System Discovery - ping sweep
+
+Prerequisites met:
+T1018-4 Remote System Discovery - ping sweep
+
+CheckPrereq's for:
+T1018-5 Remote System Discovery - arp
+
+Prerequisites met:
+T1018-5 Remote System Discovery - arp
+
+CheckPrereq's for:
+T1018-8 Remote System Discovery - nslookup
+
+Prerequisites not met: T1018-8 Remote System Discovery - nslookup
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1022-2 Compress Data and lock with password for Exfiltration with winrar
+
+Prerequisites met:
+T1022-2 Compress Data and lock with password for Exfiltration with winrar
+
+CheckPrereq's for:
+T1022-3 Compress Data and lock with password for Exfiltration with winzip
+
+Prerequisites met:
+T1022-3 Compress Data and lock with password for Exfiltration with winzip
+
+CheckPrereq's for:
+T1022-4 Compress Data and lock with password for Exfiltration with 7zip
+
+Prerequisites met:
+T1022-4 Compress Data and lock with password for Exfiltration with 7zip
+
+CheckPrereq's for:
+T1023-1 Shortcut Modification
+
+Prerequisites met:
+T1023-1 Shortcut Modification
+
+CheckPrereq's for:
+T1023-2 Create shortcut to cmd in startup folders
+
+Prerequisites not met: T1023-2 Create shortcut to cmd in startup folders
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1027-2 Execute base64-encoded PowerShell
+
+Prerequisites met:
+T1027-2 Execute base64-encoded PowerShell
+
+CheckPrereq's for:
+T1027-3 Execute base64-encoded PowerShell from Windows Registry
+
+Prerequisites met:
+T1027-3 Execute base64-encoded PowerShell from Windows Registry
+
+CheckPrereq's for:
+T1028-1 Enable Windows Remote Management
+
+Prerequisites not met: T1028-1 Enable Windows Remote Management
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1028-2 PowerShell Lateral Movement
+
+Prerequisites met:
+T1028-2 PowerShell Lateral Movement
+
+CheckPrereq's for:
+T1028-3 WMIC Process Call Create
+
+Prerequisites met:
+T1028-3 WMIC Process Call Create
+
+CheckPrereq's for:
+T1028-4 Psexec
+
+Prerequisites not met: T1028-4 Psexec
+	[*] PsExec tool from Sysinternals must exist on disk at specified location (C:\PSTools\PsExec.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1028-5 Invoke-Command
+
+Prerequisites met:
+T1028-5 Invoke-Command
+
+CheckPrereq's for:
+T1031-1 Modify Fax service to run PowerShell
+
+Prerequisites not met: T1031-1 Modify Fax service to run PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1032-1 OpenSSL C2
+
+Prerequisites met:
+T1032-1 OpenSSL C2
+
+CheckPrereq's for:
+T1033-1 System Owner/User Discovery
+
+Prerequisites met:
+T1033-1 System Owner/User Discovery
+
+CheckPrereq's for:
+T1035-1 Execute a Command as a Service
+
+Prerequisites not met: T1035-1 Execute a Command as a Service
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1035-2 Use PsExec to execute a command on a remote host
+
+Prerequisites not met: T1035-2 Use PsExec to execute a command on a remote host
+	[*] PsExec tool from Sysinternals must exist on disk at specified location (C:\PSTools\PsExec.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1036-1 Masquerading as Windows LSASS process
+
+Prerequisites met:
+T1036-1 Masquerading as Windows LSASS process
+
+CheckPrereq's for:
+T1036-3 Masquerading - cscript.exe running as notepad.exe
+
+Prerequisites met:
+T1036-3 Masquerading - cscript.exe running as notepad.exe
+
+CheckPrereq's for:
+T1036-4 Masquerading - wscript.exe running as svchost.exe
+
+Prerequisites met:
+T1036-4 Masquerading - wscript.exe running as svchost.exe
+
+CheckPrereq's for:
+T1036-5 Masquerading - powershell.exe running as taskhostw.exe
+
+Prerequisites met:
+T1036-5 Masquerading - powershell.exe running as taskhostw.exe
+
+CheckPrereq's for:
+T1036-6 Masquerading - non-windows exe running as windows exe
+
+Prerequisites met:
+T1036-6 Masquerading - non-windows exe running as windows exe
+
+CheckPrereq's for:
+T1036-7 Masquerading - windows exe running as different windows exe
+
+Prerequisites met:
+T1036-7 Masquerading - windows exe running as different windows exe
+
+CheckPrereq's for:
+T1036-8 Malicious process Masquerading as LSM.exe
+
+Prerequisites not met: T1036-8 Malicious process Masquerading as LSM.exe
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1037-1 Logon Scripts
+
+Prerequisites met:
+T1037-1 Logon Scripts
+
+CheckPrereq's for:
+T1037-2 Scheduled Task Startup Script
+
+Prerequisites not met: T1037-2 Scheduled Task Startup Script
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1037-4 Supicious vbs file run from startup Folder
+
+Prerequisites not met: T1037-4 Supicious vbs file run from startup Folder
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1037-5 Supicious jse file run from startup Folder
+
+Prerequisites not met: T1037-5 Supicious jse file run from startup Folder
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1037-6 Supicious bat file run from startup Folder
+
+Prerequisites not met: T1037-6 Supicious bat file run from startup Folder
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1038-1 DLL Search Order Hijacking - amsi.dll
+
+Prerequisites not met: T1038-1 DLL Search Order Hijacking - amsi.dll
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1040-3 Packet Capture Windows Command Prompt
+
+Prerequisites not met: T1040-3 Packet Capture Windows Command Prompt
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1040-4 Packet Capture PowerShell
+
+Prerequisites not met: T1040-4 Packet Capture PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1042-1 Change Default File Association
+
+Prerequisites met:
+T1042-1 Change Default File Association
+
+CheckPrereq's for:
+T1044-1 File System Permissions Weakness
+
+Prerequisites not met: T1044-1 File System Permissions Weakness
+	[*] A file must exist on disk at specified location ($env:TEMP\T1044_weak_permission_file.txt)
+	[*] A file to replace the original weak_permission_file. In an attack this would be the malicious file gaining extra privileges
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1047-1 WMI Reconnaissance Users
+
+Prerequisites met:
+T1047-1 WMI Reconnaissance Users
+
+CheckPrereq's for:
+T1047-2 WMI Reconnaissance Processes
+
+Prerequisites met:
+T1047-2 WMI Reconnaissance Processes
+
+CheckPrereq's for:
+T1047-3 WMI Reconnaissance Software
+
+Prerequisites met:
+T1047-3 WMI Reconnaissance Software
+
+CheckPrereq's for:
+T1047-4 WMI Reconnaissance List Remote Services
+
+Prerequisites met:
+T1047-4 WMI Reconnaissance List Remote Services
+
+CheckPrereq's for:
+T1047-5 WMI Execute Local Process
+
+Prerequisites met:
+T1047-5 WMI Execute Local Process
+
+CheckPrereq's for:
+T1047-6 WMI Execute Remote Process
+
+Prerequisites met:
+T1047-6 WMI Execute Remote Process
+
+CheckPrereq's for:
+T1048-4 Exfiltration Over Alternative Protocol - ICMP
+
+Prerequisites met:
+T1048-4 Exfiltration Over Alternative Protocol - ICMP
+
+CheckPrereq's for:
+T1049-1 System Network Connections Discovery
+
+Prerequisites met:
+T1049-1 System Network Connections Discovery
+
+CheckPrereq's for:
+T1049-2 System Network Connections Discovery with PowerShell
+
+Prerequisites met:
+T1049-2 System Network Connections Discovery with PowerShell
+
+CheckPrereq's for:
+T1050-1 Service Installation CMD
+
+Prerequisites not met: T1050-1 Service Installation CMD
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1050-2 Service Installation PowerShell
+
+Prerequisites not met: T1050-2 Service Installation PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1053-1 At.exe Scheduled task
+
+Prerequisites met:
+T1053-1 At.exe Scheduled task
+
+CheckPrereq's for:
+T1053-2 Scheduled task Local
+
+Prerequisites not met: T1053-2 Scheduled task Local
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1053-3 Scheduled task Remote
+
+Prerequisites not met: T1053-3 Scheduled task Remote
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1053-4 Powershell Cmdlet Scheduled Task
+
+Prerequisites met:
+T1053-4 Powershell Cmdlet Scheduled Task
+
+CheckPrereq's for:
+T1055-1 Process Injection via mavinject.exe
+
+Prerequisites not met: T1055-1 Process Injection via mavinject.exe
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1055-4 Process Injection via C#
+
+Prerequisites met:
+T1055-4 Process Injection via C#
+
+CheckPrereq's for:
+T1055-5 svchost writing a file to a UNC path
+
+Prerequisites not met: T1055-5 svchost writing a file to a UNC path
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1056-1 Input Capture
+
+Prerequisites not met: T1056-1 Input Capture
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1057-2 Process Discovery - tasklist
+
+Prerequisites met:
+T1057-2 Process Discovery - tasklist
+
+CheckPrereq's for:
+T1058-1 Service Registry Permissions Weakness
+
+Prerequisites met:
+T1058-1 Service Registry Permissions Weakness
+
+CheckPrereq's for:
+T1060-1 Reg Key Run
+
+Prerequisites met:
+T1060-1 Reg Key Run
+
+CheckPrereq's for:
+T1060-2 Reg Key RunOnce
+
+Prerequisites met:
+T1060-2 Reg Key RunOnce
+
+CheckPrereq's for:
+T1060-3 PowerShell Registry RunOnce
+
+Prerequisites not met: T1060-3 PowerShell Registry RunOnce
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1062-1 Installing Hyper-V Feature
+
+Prerequisites met:
+T1062-1 Installing Hyper-V Feature
+
+CheckPrereq's for:
+T1063-1 Security Software Discovery
+
+Prerequisites met:
+T1063-1 Security Software Discovery
+
+CheckPrereq's for:
+T1063-2 Security Software Discovery - powershell
+
+Prerequisites met:
+T1063-2 Security Software Discovery - powershell
+
+CheckPrereq's for:
+T1063-4 Security Software Discovery - Sysmon Service
+
+Prerequisites not met: T1063-4 Security Software Discovery - Sysmon Service
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1063-5 Security Software Discovery - AV Discovery via WMI
+
+Prerequisites not met: T1063-5 Security Software Discovery - AV Discovery via WMI
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1064-2 Create and Execute Batch Script
+
+Prerequisites not met: T1064-2 Create and Execute Batch Script
+	[*] Batch file must exist on disk at specified location ($env:TEMP\T1064_script.bat)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1065-1 Testing usage of uncommonly used port with PowerShell
+
+Prerequisites met:
+T1065-1 Testing usage of uncommonly used port with PowerShell
+
+CheckPrereq's for:
+T1069-2 Basic Permission Groups Discovery Windows
+
+Prerequisites met:
+T1069-2 Basic Permission Groups Discovery Windows
+
+CheckPrereq's for:
+T1069-3 Permission Groups Discovery PowerShell
+
+Prerequisites met:
+T1069-3 Permission Groups Discovery PowerShell
+
+CheckPrereq's for:
+T1069-4 Elevated group enumeration using net group
+
+Prerequisites met:
+T1069-4 Elevated group enumeration using net group
+
+CheckPrereq's for:
+T1070-1 Clear Logs
+
+Prerequisites not met: T1070-1 Clear Logs
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1070-2 FSUtil
+
+Prerequisites not met: T1070-2 FSUtil
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1070-6 Delete System Logs Using PowerShell
+
+Prerequisites not met: T1070-6 Delete System Logs Using PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1070-7 Delete System Logs Using Clear-EventLogId
+
+Prerequisites not met: T1070-7 Delete System Logs Using Clear-EventLogId
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1071-1 Malicious User Agents - Powershell
+
+Prerequisites met:
+T1071-1 Malicious User Agents - Powershell
+
+CheckPrereq's for:
+T1071-2 Malicious User Agents - CMD
+
+Prerequisites met:
+T1071-2 Malicious User Agents - CMD
+
+CheckPrereq's for:
+T1071-4 DNS Large Query Volume
+
+Prerequisites met:
+T1071-4 DNS Large Query Volume
+
+CheckPrereq's for:
+T1071-5 DNS Regular Beaconing
+
+Prerequisites met:
+T1071-5 DNS Regular Beaconing
+
+CheckPrereq's for:
+T1071-6 DNS Long Domain Query
+
+Prerequisites met:
+T1071-6 DNS Long Domain Query
+
+CheckPrereq's for:
+T1071-7 DNS C2
+
+Prerequisites met:
+T1071-7 DNS C2
+
+CheckPrereq's for:
+T1071-8 OSTap Payload Download
+
+Prerequisites met:
+T1071-8 OSTap Payload Download
+
+CheckPrereq's for:
+T1073-1 DLL Side-Loading using the Notepad++ GUP.exe binary
+
+Prerequisites met:
+T1073-1 DLL Side-Loading using the Notepad++ GUP.exe binary
+
+CheckPrereq's for:
+T1074-1 Stage data from Discovery.bat
+
+Prerequisites met:
+T1074-1 Stage data from Discovery.bat
+
+CheckPrereq's for:
+T1074-3 Zip a Folder with PowerShell for Staging in Temp
+
+Prerequisites met:
+T1074-3 Zip a Folder with PowerShell for Staging in Temp
+
+CheckPrereq's for:
+T1075-1 Mimikatz Pass the Hash
+
+Prerequisites met:
+T1075-1 Mimikatz Pass the Hash
+
+CheckPrereq's for:
+T1075-2 crackmapexec Pass the Hash
+
+Prerequisites met:
+T1075-2 crackmapexec Pass the Hash
+
+CheckPrereq's for:
+T1076-1 RDP hijacking
+
+Prerequisites not met: T1076-1 RDP hijacking
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1076-2 RDPto-DomainController
+
+Prerequisites not met: T1076-2 RDPto-DomainController
+	[*] Computer must be domain joined
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1077-1 Map admin share
+
+Prerequisites met:
+T1077-1 Map admin share
+
+CheckPrereq's for:
+T1077-2 Map Admin Share PowerShell
+
+Prerequisites met:
+T1077-2 Map Admin Share PowerShell
+
+CheckPrereq's for:
+T1077-3 Copy and Execute File with PsExec
+
+Prerequisites not met: T1077-3 Copy and Execute File with PsExec
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1077-4 Execute command writing output to local Admin Share
+
+Prerequisites not met: T1077-4 Execute command writing output to local Admin Share
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1081-3 Extracting passwords with findstr
+
+Prerequisites met:
+T1081-3 Extracting passwords with findstr
+
+CheckPrereq's for:
+T1081-4 Access unattend.xml
+
+Prerequisites not met: T1081-4 Access unattend.xml
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1082-1 System Information Discovery
+
+Prerequisites met:
+T1082-1 System Information Discovery
+
+CheckPrereq's for:
+T1082-6 Hostname Discovery (Windows)
+
+Prerequisites met:
+T1082-6 Hostname Discovery (Windows)
+
+CheckPrereq's for:
+T1082-8 Windows MachineGUID Discovery
+
+Prerequisites met:
+T1082-8 Windows MachineGUID Discovery
+
+CheckPrereq's for:
+T1083-1 File and Directory Discovery (cmd.exe)
+
+Prerequisites met:
+T1083-1 File and Directory Discovery (cmd.exe)
+
+CheckPrereq's for:
+T1083-2 File and Directory Discovery (PowerShell)
+
+Prerequisites met:
+T1083-2 File and Directory Discovery (PowerShell)
+
+CheckPrereq's for:
+T1084-1 Persistence via WMI Event Subscription
+
+Prerequisites not met: T1084-1 Persistence via WMI Event Subscription
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1085-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Prerequisites met:
+T1085-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+CheckPrereq's for:
+T1085-2 Rundll32 execute VBscript command
+
+Prerequisites met:
+T1085-2 Rundll32 execute VBscript command
+
+CheckPrereq's for:
+T1085-3 Rundll32 advpack.dll Execution
+
+Prerequisites met:
+T1085-3 Rundll32 advpack.dll Execution
+
+CheckPrereq's for:
+T1085-4 Rundll32 ieadvpack.dll Execution
+
+Prerequisites met:
+T1085-4 Rundll32 ieadvpack.dll Execution
+
+CheckPrereq's for:
+T1085-5 Rundll32 syssetup.dll Execution
+
+Prerequisites met:
+T1085-5 Rundll32 syssetup.dll Execution
+
+CheckPrereq's for:
+T1085-6 Rundll32 setupapi.dll Execution
+
+Prerequisites met:
+T1085-6 Rundll32 setupapi.dll Execution
+
+CheckPrereq's for:
+T1086-1 Mimikatz
+
+Prerequisites not met: T1086-1 Mimikatz
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1086-2 BloodHound
+
+Prerequisites met:
+T1086-2 BloodHound
+
+CheckPrereq's for:
+T1086-3 Obfuscation Tests
+
+Prerequisites met:
+T1086-3 Obfuscation Tests
+
+CheckPrereq's for:
+T1086-4 Mimikatz - Cradlecraft PsSendKeys
+
+Prerequisites not met: T1086-4 Mimikatz - Cradlecraft PsSendKeys
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1086-5 Invoke-AppPathBypass
+
+Prerequisites met:
+T1086-5 Invoke-AppPathBypass
+
+CheckPrereq's for:
+T1086-6 Powershell MsXml COM object - no prompt
+
+Prerequisites met:
+T1086-6 Powershell MsXml COM object - no prompt
+
+CheckPrereq's for:
+T1086-7 Powershell MsXml COM object - with prompt
+
+Prerequisites met:
+T1086-7 Powershell MsXml COM object - with prompt
+
+CheckPrereq's for:
+T1086-8 Powershell XML requests
+
+Prerequisites met:
+T1086-8 Powershell XML requests
+
+CheckPrereq's for:
+T1086-9 Powershell invoke mshta.exe download
+
+Prerequisites met:
+T1086-9 Powershell invoke mshta.exe download
+
+CheckPrereq's for:
+T1086-11 PowerShell Fileless Script Execution
+
+Prerequisites not met: T1086-11 PowerShell Fileless Script Execution
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1086-12 PowerShell Downgrade Attack
+
+Prerequisites met:
+T1086-12 PowerShell Downgrade Attack
+
+CheckPrereq's for:
+T1086-13 NTFS Alternate Data Stream Access
+
+Prerequisites met:
+T1086-13 NTFS Alternate Data Stream Access
+
+CheckPrereq's for:
+T1087-8 Enumerate all accounts
+
+Prerequisites met:
+T1087-8 Enumerate all accounts
+
+CheckPrereq's for:
+T1087-9 Enumerate all accounts via PowerShell
+
+Prerequisites met:
+T1087-9 Enumerate all accounts via PowerShell
+
+CheckPrereq's for:
+T1087-10 Enumerate logged on users
+
+Prerequisites met:
+T1087-10 Enumerate logged on users
+
+CheckPrereq's for:
+T1087-11 Enumerate logged on users via PowerShell
+
+Prerequisites met:
+T1087-11 Enumerate logged on users via PowerShell
+
+CheckPrereq's for:
+T1088-1 Bypass UAC using Event Viewer (cmd)
+
+Prerequisites met:
+T1088-1 Bypass UAC using Event Viewer (cmd)
+
+CheckPrereq's for:
+T1088-2 Bypass UAC using Event Viewer (PowerShell)
+
+Prerequisites met:
+T1088-2 Bypass UAC using Event Viewer (PowerShell)
+
+CheckPrereq's for:
+T1088-3 Bypass UAC using Fodhelper
+
+Prerequisites met:
+T1088-3 Bypass UAC using Fodhelper
+
+CheckPrereq's for:
+T1088-4 Bypass UAC using Fodhelper - PowerShell
+
+Prerequisites met:
+T1088-4 Bypass UAC using Fodhelper - PowerShell
+
+CheckPrereq's for:
+T1088-5 Bypass UAC using ComputerDefaults (PowerShell)
+
+Prerequisites not met: T1088-5 Bypass UAC using ComputerDefaults (PowerShell)
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1088-6 Bypass UAC by Mocking Trusted Directories
+
+Prerequisites not met: T1088-6 Bypass UAC by Mocking Trusted Directories
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-8 Unload Sysmon Filter Driver
+
+Prerequisites not met: T1089-8 Unload Sysmon Filter Driver
+	[*] Elevation required but not provided
+	[*] Sysmon must be downloaded
+	[*] sysmon must be Installed
+	[*] sysmon filter must be loaded
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-9 Disable Windows IIS HTTP Logging
+
+Prerequisites met:
+T1089-9 Disable Windows IIS HTTP Logging
+
+CheckPrereq's for:
+T1089-10 Uninstall Sysmon
+
+Prerequisites not met: T1089-10 Uninstall Sysmon
+	[*] Elevation required but not provided
+	[*] Sysmon executable must be available
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-11 AMSI Bypass - AMSI InitFailed
+
+Prerequisites met:
+T1089-11 AMSI Bypass - AMSI InitFailed
+
+CheckPrereq's for:
+T1089-12 AMSI Bypass - Remove AMSI Provider Reg Key
+
+Prerequisites not met: T1089-12 AMSI Bypass - Remove AMSI Provider Reg Key
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-13 Disable Arbitrary Security Windows Service
+
+Prerequisites not met: T1089-13 Disable Arbitrary Security Windows Service
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-14 Disable PowerShell Script Block Logging
+
+Prerequisites met:
+T1089-14 Disable PowerShell Script Block Logging
+
+CheckPrereq's for:
+T1089-15 PowerShell Bypass of AntiMalware Scripting Interface
+
+Prerequisites met:
+T1089-15 PowerShell Bypass of AntiMalware Scripting Interface
+
+CheckPrereq's for:
+T1089-16 Tamper with Windows Defender ATP PowerShell
+
+Prerequisites not met: T1089-16 Tamper with Windows Defender ATP PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-17 Tamper with Windows Defender Command Prompt
+
+Prerequisites not met: T1089-17 Tamper with Windows Defender Command Prompt
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-18 Tamper with Windows Defender Registry
+
+Prerequisites not met: T1089-18 Tamper with Windows Defender Registry
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1089-19 Disable Microft Office Security Features
+
+Prerequisites met:
+T1089-19 Disable Microft Office Security Features
+
+CheckPrereq's for:
+T1089-20 Remove Windows Defender Definition Files
+
+Prerequisites not met: T1089-20 Remove Windows Defender Definition Files
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1090-2 portproxy reg key
+
+Prerequisites not met: T1090-2 portproxy reg key
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1093-1 Process Hollowing using PowerShell
+
+Prerequisites met:
+T1093-1 Process Hollowing using PowerShell
+
+CheckPrereq's for:
+T1095-1 ICMP C2
+
+Prerequisites met:
+T1095-1 ICMP C2
+
+CheckPrereq's for:
+T1095-2 Netcat C2
+
+Prerequisites not met: T1095-2 Netcat C2
+	[*] ncat.exe must be available at specified location ($env:TEMP\T1095\nmap-7.80\ncat.exe)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1095-3 Powercat C2
+
+Prerequisites met:
+T1095-3 Powercat C2
+
+CheckPrereq's for:
+T1096-1 Alternate Data Streams (ADS)
+
+Prerequisites not met: T1096-1 Alternate Data Streams (ADS)
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1096-2 Store file in Alternate Data Stream (ADS)
+
+Prerequisites met:
+T1096-2 Store file in Alternate Data Stream (ADS)
+
+CheckPrereq's for:
+T1097-1 Mimikatz Kerberos Ticket Attack
+
+Prerequisites met:
+T1097-1 Mimikatz Kerberos Ticket Attack
+
+CheckPrereq's for:
+T1098-1 Admin Account Manipulate
+
+Prerequisites not met: T1098-1 Admin Account Manipulate
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1099-5 Windows - Modify file creation timestamp with PowerShell
+
+Prerequisites not met: T1099-5 Windows - Modify file creation timestamp with PowerShell
+	[*] A file must exist at the path ($env:TEMP\T1099_timestomp.txt) to change the creation time on
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1099-6 Windows - Modify file last modified timestamp with PowerShell
+
+Prerequisites not met: T1099-6 Windows - Modify file last modified timestamp with PowerShell
+	[*] A file must exist at the path ($env:TEMP\T1099_timestomp.txt) to change the modified time on
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1099-7 Windows - Modify file last access timestamp with PowerShell
+
+Prerequisites not met: T1099-7 Windows - Modify file last access timestamp with PowerShell
+	[*] A file must exist at the path ($env:TEMP\T1099_timestomp.txt) to change the last access time on
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1100-1 Web Shell Written to Disk
+
+Prerequisites met:
+T1100-1 Web Shell Written to Disk
+
+CheckPrereq's for:
+T1101-1 Modify SSP configuration in registry
+
+Prerequisites not met: T1101-1 Modify SSP configuration in registry
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1102-1 Reach out to C2 Pointer URLs via command_prompt
+
+Prerequisites met:
+T1102-1 Reach out to C2 Pointer URLs via command_prompt
+
+CheckPrereq's for:
+T1102-2 Reach out to C2 Pointer URLs via powershell
+
+Prerequisites met:
+T1102-2 Reach out to C2 Pointer URLs via powershell
+
+CheckPrereq's for:
+T1103-1 Install AppInit Shim
+
+Prerequisites not met: T1103-1 Install AppInit Shim
+	[*] Elevation required but not provided
+	[*] DLL's must exist in the C:\Tools directory (T1103.dll and T1103x86.dll)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1105-7 certutil download (urlcache)
+
+Prerequisites met:
+T1105-7 certutil download (urlcache)
+
+CheckPrereq's for:
+T1105-8 certutil download (verifyctl)
+
+Prerequisites met:
+T1105-8 certutil download (verifyctl)
+
+CheckPrereq's for:
+T1105-9 Windows - BITSAdmin BITS Download
+
+Prerequisites met:
+T1105-9 Windows - BITSAdmin BITS Download
+
+CheckPrereq's for:
+T1105-10 Windows - PowerShell Download
+
+Prerequisites met:
+T1105-10 Windows - PowerShell Download
+
+CheckPrereq's for:
+T1105-11 OSTAP Worming Activity
+
+Prerequisites not met: T1105-11 OSTAP Worming Activity
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1107-4 Delete a single file - Windows cmd
+
+Prerequisites not met: T1107-4 Delete a single file - Windows cmd
+	[*] The file to delete must exist on disk at specified location (%temp%\deleteme_T1107)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1107-5 Delete an entire folder - Windows cmd
+
+Prerequisites not met: T1107-5 Delete an entire folder - Windows cmd
+	[*] The file to delete must exist on disk at specified location (%temp%\deleteme_T1107)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1107-6 Delete a single file - Windows PowerShell
+
+Prerequisites not met: T1107-6 Delete a single file - Windows PowerShell
+	[*] The file to delete must exist on disk at specified location ($env:TEMP\deleteme_T1107)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1107-7 Delete an entire folder - Windows PowerShell
+
+Prerequisites not met: T1107-7 Delete an entire folder - Windows PowerShell
+	[*] The folder to delete must exist on disk at specified location ($env:TEMP\deleteme_folder_T1107)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1107-9 Delete-PrefetchFile
+
+Prerequisites not met: T1107-9 Delete-PrefetchFile
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1107-10 Delete TeamViewer Log Files
+
+Prerequisites not met: T1107-10 Delete TeamViewer Log Files
+	[*] The folder to delete must exist on disk at specified location ($env:TEMP\TeamViewer_54.log)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1110-1 Brute Force Credentials
+
+Prerequisites met:
+T1110-1 Brute Force Credentials
+
+CheckPrereq's for:
+T1112-1 Modify Registry of Current User Profile - cmd
+
+Prerequisites not met: T1112-1 Modify Registry of Current User Profile - cmd
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1112-2 Modify Registry of Local Machine - cmd
+
+Prerequisites not met: T1112-2 Modify Registry of Local Machine - cmd
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1112-3 Modify registry to store logon credentials
+
+Prerequisites not met: T1112-3 Modify registry to store logon credentials
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1112-4 Add domain to Trusted sites Zone
+
+Prerequisites met:
+T1112-4 Add domain to Trusted sites Zone
+
+CheckPrereq's for:
+T1112-5 Javascript in registry
+
+Prerequisites met:
+T1112-5 Javascript in registry
+
+CheckPrereq's for:
+T1114-1 T1114 Email Collection with PowerShell
+
+Prerequisites met:
+T1114-1 T1114 Email Collection with PowerShell
+
+CheckPrereq's for:
+T1115-1 Utilize Clipboard to store or execute commands from
+
+Prerequisites met:
+T1115-1 Utilize Clipboard to store or execute commands from
+
+CheckPrereq's for:
+T1115-2 PowerShell
+
+Prerequisites met:
+T1115-2 PowerShell
+
+CheckPrereq's for:
+T1117-1 Regsvr32 local COM scriptlet execution
+
+Prerequisites met:
+T1117-1 Regsvr32 local COM scriptlet execution
+
+CheckPrereq's for:
+T1117-2 Regsvr32 remote COM scriptlet execution
+
+Prerequisites met:
+T1117-2 Regsvr32 remote COM scriptlet execution
+
+CheckPrereq's for:
+T1117-3 Regsvr32 local DLL execution
+
+Prerequisites met:
+T1117-3 Regsvr32 local DLL execution
+
+CheckPrereq's for:
+T1118-1 CheckIfInstallable method call
+
+Prerequisites met:
+T1118-1 CheckIfInstallable method call
+
+CheckPrereq's for:
+T1118-2 InstallHelper method call
+
+Prerequisites met:
+T1118-2 InstallHelper method call
+
+CheckPrereq's for:
+T1118-3 InstallUtil class constructor method call
+
+Prerequisites met:
+T1118-3 InstallUtil class constructor method call
+
+CheckPrereq's for:
+T1118-4 InstallUtil Install method call
+
+Prerequisites met:
+T1118-4 InstallUtil Install method call
+
+CheckPrereq's for:
+T1118-5 InstallUtil Uninstall method call - /U variant
+
+Prerequisites met:
+T1118-5 InstallUtil Uninstall method call - /U variant
+
+CheckPrereq's for:
+T1118-6 InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
+
+Prerequisites met:
+T1118-6 InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
+
+CheckPrereq's for:
+T1118-7 InstallUtil HelpText method call
+
+Prerequisites met:
+T1118-7 InstallUtil HelpText method call
+
+CheckPrereq's for:
+T1118-8 InstallUtil evasive invocation
+
+Prerequisites met:
+T1118-8 InstallUtil evasive invocation
+
+CheckPrereq's for:
+T1119-1 Automated Collection Command Prompt
+
+Prerequisites met:
+T1119-1 Automated Collection Command Prompt
+
+CheckPrereq's for:
+T1119-2 Automated Collection PowerShell
+
+Prerequisites met:
+T1119-2 Automated Collection PowerShell
+
+CheckPrereq's for:
+T1119-3 Recon information for export with PowerShell
+
+Prerequisites met:
+T1119-3 Recon information for export with PowerShell
+
+CheckPrereq's for:
+T1119-4 Recon information for export with Command Prompt
+
+Prerequisites met:
+T1119-4 Recon information for export with Command Prompt
+
+CheckPrereq's for:
+T1121-1 Regasm Uninstall Method Call Test
+
+Prerequisites met:
+T1121-1 Regasm Uninstall Method Call Test
+
+CheckPrereq's for:
+T1121-2 Regsvs Uninstall Method Call Test
+
+Prerequisites not met: T1121-2 Regsvs Uninstall Method Call Test
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1123-1 using device audio capture commandlet
+
+Prerequisites met:
+T1123-1 using device audio capture commandlet
+
+CheckPrereq's for:
+T1124-1 System Time Discovery
+
+Prerequisites met:
+T1124-1 System Time Discovery
+
+CheckPrereq's for:
+T1124-2 System Time Discovery - PowerShell
+
+Prerequisites met:
+T1124-2 System Time Discovery - PowerShell
+
+CheckPrereq's for:
+T1126-1 Add Network Share
+
+Prerequisites met:
+T1126-1 Add Network Share
+
+CheckPrereq's for:
+T1126-2 Remove Network Share
+
+Prerequisites met:
+T1126-2 Remove Network Share
+
+CheckPrereq's for:
+T1126-3 Remove Network Share PowerShell
+
+Prerequisites met:
+T1126-3 Remove Network Share PowerShell
+
+CheckPrereq's for:
+T1127-1 MSBuild Bypass Using Inline Tasks
+
+Prerequisites met:
+T1127-1 MSBuild Bypass Using Inline Tasks
+
+CheckPrereq's for:
+T1128-1 Netsh Helper DLL Registration
+
+Prerequisites met:
+T1128-1 Netsh Helper DLL Registration
+
+CheckPrereq's for:
+T1135-2 Network Share Discovery command prompt
+
+Prerequisites met:
+T1135-2 Network Share Discovery command prompt
+
+CheckPrereq's for:
+T1135-3 Network Share Discovery PowerShell
+
+Prerequisites met:
+T1135-3 Network Share Discovery PowerShell
+
+CheckPrereq's for:
+T1135-4 View available share drives
+
+Prerequisites met:
+T1135-4 View available share drives
+
+CheckPrereq's for:
+T1136-3 Create a new user in a command prompt
+
+Prerequisites not met: T1136-3 Create a new user in a command prompt
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1136-4 Create a new user in PowerShell
+
+Prerequisites not met: T1136-4 Create a new user in PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1138-1 Application Shim Installation
+
+Prerequisites not met: T1138-1 Application Shim Installation
+	[*] Elevation required but not provided
+	[*] AtomicTest.dll must exist at c:\Tools\AtomicTest.dll
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1138-2 New shim database files created in the default shim database directory
+
+Prerequisites not met: T1138-2 New shim database files created in the default shim database directory
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1138-3 Registry key creation and/or modification events for SDB
+
+Prerequisites not met: T1138-3 Registry key creation and/or modification events for SDB
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1140-1 Deobfuscate/Decode Files Or Information
+
+Prerequisites met:
+T1140-1 Deobfuscate/Decode Files Or Information
+
+CheckPrereq's for:
+T1140-2 Certutil Rename and Decode
+
+Prerequisites met:
+T1140-2 Certutil Rename and Decode
+
+CheckPrereq's for:
+T1141-2 PowerShell - Prompt User for Password
+
+Prerequisites met:
+T1141-2 PowerShell - Prompt User for Password
+
+CheckPrereq's for:
+T1143-1 Hidden Window
+
+Prerequisites met:
+T1143-1 Hidden Window
+
+CheckPrereq's for:
+T1145-1 Private Keys
+
+Prerequisites not met: T1145-1 Private Keys
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1158-3 Create Windows System File with Attrib
+
+Prerequisites not met: T1158-3 Create Windows System File with Attrib
+	[*] Elevation required but not provided
+	[*] The file must exist on disk at specified location (%temp%\T1158.txt)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1158-4 Create Windows Hidden File with Attrib
+
+Prerequisites not met: T1158-4 Create Windows Hidden File with Attrib
+	[*] Elevation required but not provided
+	[*] The file must exist on disk at specified location (%temp%\T1158.txt)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1158-8 Create ADS command prompt
+
+Prerequisites not met: T1158-8 Create ADS command prompt
+	[*] The file must exist on disk at specified location (%temp%\T1158_has_ads_cmd.txt)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1158-9 Create ADS PowerShell
+
+Prerequisites not met: T1158-9 Create ADS PowerShell
+	[*] The file must exist on disk at specified location ($env:TEMP\T1158_has_ads_powershell.txt)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1170-1 Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject
+
+Prerequisites met:
+T1170-1 Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject
+
+CheckPrereq's for:
+T1170-2 Mshta calls a local VBScript file to launch notepad.exe
+
+Prerequisites met:
+T1170-2 Mshta calls a local VBScript file to launch notepad.exe
+
+CheckPrereq's for:
+T1170-3 Mshta executes VBScript to execute malicious command
+
+Prerequisites met:
+T1170-3 Mshta executes VBScript to execute malicious command
+
+CheckPrereq's for:
+T1170-4 Mshta Executes Remote HTML Application (HTA)
+
+Prerequisites met:
+T1170-4 Mshta Executes Remote HTML Application (HTA)
+
+CheckPrereq's for:
+T1173-2 Execute PowerShell script via Word DDE
+
+Prerequisites met:
+T1173-2 Execute PowerShell script via Word DDE
+
+CheckPrereq's for:
+T1174-1 Install and Register Password Filter DLL
+
+Prerequisites not met: T1174-1 Install and Register Password Filter DLL
+	[*] Elevation required but not provided
+	[*] AtomicPasswordFilter.dll must exist on disk at specified location (C:\AtomicRedTeam\atomics\T1174\src\AtomicPasswordFilter.dll)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1179-1 Hook PowerShell TLS Encrypt/Decrypt Messages
+
+Prerequisites not met: T1179-1 Hook PowerShell TLS Encrypt/Decrypt Messages
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1180-1 Set Arbitrary Binary as Screensaver
+
+Prerequisites not met: T1180-1 Set Arbitrary Binary as Screensaver
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1183-1 IFEO Add Debugger
+
+Prerequisites not met: T1183-1 IFEO Add Debugger
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1183-2 IFEO Global Flags
+
+Prerequisites not met: T1183-2 IFEO Global Flags
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1191-1 CMSTP Executing Remote Scriptlet
+
+Prerequisites met:
+T1191-1 CMSTP Executing Remote Scriptlet
+
+CheckPrereq's for:
+T1191-2 CMSTP Executing UAC Bypass
+
+Prerequisites met:
+T1191-2 CMSTP Executing UAC Bypass
+
+CheckPrereq's for:
+T1193-1 Download Phishing Attachment - VBScript
+
+Prerequisites met:
+T1193-1 Download Phishing Attachment - VBScript
+
+CheckPrereq's for:
+T1196-1 Control Panel Items
+
+Prerequisites met:
+T1196-1 Control Panel Items
+
+CheckPrereq's for:
+T1197-1 Bitsadmin Download (cmd)
+
+Prerequisites met:
+T1197-1 Bitsadmin Download (cmd)
+
+CheckPrereq's for:
+T1197-2 Bitsadmin Download (PowerShell)
+
+Prerequisites met:
+T1197-2 Bitsadmin Download (PowerShell)
+
+CheckPrereq's for:
+T1197-3 Persist, Download, & Execute
+
+Prerequisites met:
+T1197-3 Persist, Download, & Execute
+
+CheckPrereq's for:
+T1201-5 Examine local password policy - Windows
+
+Prerequisites met:
+T1201-5 Examine local password policy - Windows
+
+CheckPrereq's for:
+T1201-6 Examine domain password policy - Windows
+
+Prerequisites met:
+T1201-6 Examine domain password policy - Windows
+
+CheckPrereq's for:
+T1202-1 Indirect Command Execution - pcalua.exe
+
+Prerequisites met:
+T1202-1 Indirect Command Execution - pcalua.exe
+
+CheckPrereq's for:
+T1202-2 Indirect Command Execution - forfiles.exe
+
+Prerequisites met:
+T1202-2 Indirect Command Execution - forfiles.exe
+
+CheckPrereq's for:
+T1204-1 OSTap Style Macro Execution
+
+Prerequisites not met: T1204-1 OSTap Style Macro Execution
+	[*] Test Requires MS Office to be installed and have been run previously. Run -GetPrereqs to run msword and build dependant registry keys
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1204-2 Maldoc choice flags command execution
+
+Prerequisites not met: T1204-2 Maldoc choice flags command execution
+	[*] Test Requires MS Office to be installed and have been run previously. Run -GetPrereqs to run msword and build dependant registry keys
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1204-3 OSTAP JS version
+
+Prerequisites not met: T1204-3 OSTAP JS version
+	[*] Test Requires MS Office to be installed and have been run previously. Run -GetPrereqs to run msword and build dependant registry keys
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1208-1 Request for service tickets
+
+Prerequisites met:
+T1208-1 Request for service tickets
+
+CheckPrereq's for:
+T1214-1 Enumeration for Credentials in Registry
+
+Prerequisites met:
+T1214-1 Enumeration for Credentials in Registry
+
+CheckPrereq's for:
+T1214-2 Enumeration for PuTTY Credentials in Registry
+
+Prerequisites met:
+T1214-2 Enumeration for PuTTY Credentials in Registry
+
+CheckPrereq's for:
+T1216-1 PubPrn.vbs Signed Script Bypass
+
+Prerequisites met:
+T1216-1 PubPrn.vbs Signed Script Bypass
+
+CheckPrereq's for:
+T1216-2 SyncAppvPublishingServer Signed Script PowerShell Command Execution
+
+Prerequisites met:
+T1216-2 SyncAppvPublishingServer Signed Script PowerShell Command Execution
+
+CheckPrereq's for:
+T1216-3 manage-bde.wsf Signed Script Command Execution
+
+Prerequisites met:
+T1216-3 manage-bde.wsf Signed Script Command Execution
+
+CheckPrereq's for:
+T1217-4 List Google Chrome Bookmarks on Windows with powershell
+
+Prerequisites met:
+T1217-4 List Google Chrome Bookmarks on Windows with powershell
+
+CheckPrereq's for:
+T1217-5 List Google Chrome Bookmarks on Windows with command prompt
+
+Prerequisites met:
+T1217-5 List Google Chrome Bookmarks on Windows with command prompt
+
+CheckPrereq's for:
+T1218-1 mavinject - Inject DLL into running process
+
+Prerequisites not met: T1218-1 mavinject - Inject DLL into running process
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1218-2 SyncAppvPublishingServer - Execute arbitrary PowerShell code
+
+Prerequisites met:
+T1218-2 SyncAppvPublishingServer - Execute arbitrary PowerShell code
+
+CheckPrereq's for:
+T1218-3 Register-CimProvider - Execute evil dll
+
+Prerequisites met:
+T1218-3 Register-CimProvider - Execute evil dll
+
+CheckPrereq's for:
+T1218-4 Msiexec.exe - Execute Local MSI file
+
+Prerequisites met:
+T1218-4 Msiexec.exe - Execute Local MSI file
+
+CheckPrereq's for:
+T1218-5 Msiexec.exe - Execute Remote MSI file
+
+Prerequisites met:
+T1218-5 Msiexec.exe - Execute Remote MSI file
+
+CheckPrereq's for:
+T1218-6 Msiexec.exe - Execute Arbitrary DLL
+
+Prerequisites met:
+T1218-6 Msiexec.exe - Execute Arbitrary DLL
+
+CheckPrereq's for:
+T1218-7 Odbcconf.exe - Execute Arbitrary DLL
+
+Prerequisites met:
+T1218-7 Odbcconf.exe - Execute Arbitrary DLL
+
+CheckPrereq's for:
+T1218-8 InfDefaultInstall.exe .inf Execution
+
+Prerequisites met:
+T1218-8 InfDefaultInstall.exe .inf Execution
+
+CheckPrereq's for:
+T1219-1 TeamViewer Files Detected Test on Windows
+
+Prerequisites met:
+T1219-1 TeamViewer Files Detected Test on Windows
+
+CheckPrereq's for:
+T1220-1 MSXSL Bypass using local files
+
+Prerequisites met:
+T1220-1 MSXSL Bypass using local files
+
+CheckPrereq's for:
+T1220-2 MSXSL Bypass using remote files
+
+Prerequisites met:
+T1220-2 MSXSL Bypass using remote files
+
+CheckPrereq's for:
+T1220-3 WMIC bypass using local XSL file
+
+Prerequisites met:
+T1220-3 WMIC bypass using local XSL file
+
+CheckPrereq's for:
+T1220-4 WMIC bypass using remote XSL file
+
+Prerequisites met:
+T1220-4 WMIC bypass using remote XSL file
+
+CheckPrereq's for:
+T1222-1 Take ownership using takeown utility
+
+Prerequisites met:
+T1222-1 Take ownership using takeown utility
+
+CheckPrereq's for:
+T1222-2 Take ownership recursively using takeown utility
+
+Prerequisites met:
+T1222-2 Take ownership recursively using takeown utility
+
+CheckPrereq's for:
+T1222-3 cacls - Grant permission to specified user or group
+
+Prerequisites met:
+T1222-3 cacls - Grant permission to specified user or group
+
+CheckPrereq's for:
+T1222-4 cacls - Grant permission to specified user or group recursively
+
+Prerequisites met:
+T1222-4 cacls - Grant permission to specified user or group recursively
+
+CheckPrereq's for:
+T1222-5 icacls - Grant permission to specified user or group
+
+Prerequisites met:
+T1222-5 icacls - Grant permission to specified user or group
+
+CheckPrereq's for:
+T1222-6 icacls - Grant permission to specified user or group recursively
+
+Prerequisites met:
+T1222-6 icacls - Grant permission to specified user or group recursively
+
+CheckPrereq's for:
+T1222-7 attrib - Remove read-only attribute
+
+Prerequisites met:
+T1222-7 attrib - Remove read-only attribute
+
+CheckPrereq's for:
+T1223-1 Compiled HTML Help Local Payload
+
+Prerequisites met:
+T1223-1 Compiled HTML Help Local Payload
+
+CheckPrereq's for:
+T1223-2 Compiled HTML Help Remote Payload
+
+Prerequisites met:
+T1223-2 Compiled HTML Help Remote Payload
+
+CheckPrereq's for:
+T1482-1 Windows - Discover domain trusts with dsquery
+
+Prerequisites met:
+T1482-1 Windows - Discover domain trusts with dsquery
+
+CheckPrereq's for:
+T1482-2 Windows - Discover domain trusts with nltest
+
+Prerequisites met:
+T1482-2 Windows - Discover domain trusts with nltest
+
+CheckPrereq's for:
+T1482-3 Powershell enumerate domains and forests
+
+Prerequisites met:
+T1482-3 Powershell enumerate domains and forests
+
+CheckPrereq's for:
+T1485-1 Windows - Overwrite file with Sysinternals SDelete
+
+Prerequisites not met: T1485-1 Windows - Overwrite file with Sysinternals SDelete
+	[*] Secure delete tool from Sysinternals must exist on disk at specified location ($env:TEMP\Sdelete\sdelete.exe)
+	[*] The file to delete must exist at $env:TEMP\T1485.txt
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1489-1 Windows - Stop service using Service Controller
+
+Prerequisites not met: T1489-1 Windows - Stop service using Service Controller
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1489-2 Windows - Stop service using net.exe
+
+Prerequisites not met: T1489-2 Windows - Stop service using net.exe
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1489-3 Windows - Stop service by killing process
+
+Prerequisites met:
+T1489-3 Windows - Stop service by killing process
+
+CheckPrereq's for:
+T1490-1 Windows - Delete Volume Shadow Copies
+
+Prerequisites not met: T1490-1 Windows - Delete Volume Shadow Copies
+	[*] Elevation required but not provided
+	[*] Create volume shadow copy of C:\ . This prereq command only works on Windows Server or Windows 8.
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1490-2 Windows - Delete Volume Shadow Copies via WMI
+
+Prerequisites not met: T1490-2 Windows - Delete Volume Shadow Copies via WMI
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1490-3 Windows - Delete Windows Backup Catalog
+
+Prerequisites not met: T1490-3 Windows - Delete Windows Backup Catalog
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1490-4 Windows - Disable Windows Recovery Console Repair
+
+Prerequisites not met: T1490-4 Windows - Disable Windows Recovery Console Repair
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1490-5 Windows - Delete Volume Shadow Copies via WMI with PowerShell
+
+Prerequisites not met: T1490-5 Windows - Delete Volume Shadow Copies via WMI with PowerShell
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1490-6 Windows - Delete Backup Files
+
+Prerequisites not met: T1490-6 Windows - Delete Backup Files
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1500-1 Compile After Delivery using csc.exe
+
+Prerequisites met:
+T1500-1 Compile After Delivery using csc.exe
+
+CheckPrereq's for:
+T1502-1 Parent PID Spoofing using PowerShell
+
+Prerequisites met:
+T1502-1 Parent PID Spoofing using PowerShell
+
+CheckPrereq's for:
+T1504-1 Append malicious start-process cmdlet
+
+Prerequisites not met: T1504-1 Append malicious start-process cmdlet
+	[*] Ensure a powershell profile exists for the current user
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1505-1 Install MS Exchange Transport Agent Persistence
+
+Prerequisites not met: T1505-1 Install MS Exchange Transport Agent Persistence
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1518-1 Find and Display Internet Explorer Browser Version
+
+Prerequisites met:
+T1518-1 Find and Display Internet Explorer Browser Version
+
+CheckPrereq's for:
+T1518-2 Applications Installed
+
+Prerequisites met:
+T1518-2 Applications Installed
+
+CheckPrereq's for:
+T1529-1 Shutdown System - Windows
+
+Prerequisites not met: T1529-1 Shutdown System - Windows
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1529-2 Restart System - Windows
+
+Prerequisites not met: T1529-2 Restart System - Windows
+	[*] Elevation required but not provided
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1531-1 Change User Password - Windows
+
+Prerequisites not met: T1531-1 Change User Password - Windows
+	[*] Elevation required but not provided
+	[*] User account to change password of must exist (User: AtomicAdministrator)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+CheckPrereq's for:
+T1531-2 Delete User - Windows
+
+Prerequisites not met: T1531-2 Delete User - Windows
+	[*] Elevation required but not provided
+	[*] User account to delete must exist (User: AtomicUser)
+
+Try installing prereq's with the
+-GetPrereqs
+ switch
+PS C:\Users\User> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20200415142549
+**********************

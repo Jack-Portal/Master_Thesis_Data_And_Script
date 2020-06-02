@@ -1,0 +1,75 @@
+Log Analysis:
+	Events : 1549
+	Containing Atomic : 20
+
+	Levels:
+	Warning : 36
+	Error : 3
+	Information : 1510
+
+	Sources:
+	Service Control Manager : 4
+	.NET Runtime : 1
+	Microsoft-Windows-Security-Auditing : 1472
+	Microsoft-Windows-MSDTC Client 2 : 1
+	Microsoft-Windows-Complus : 1
+	Microsoft-Windows-DistributedCOM : 9
+	Microsoft-Windows-MSDTC 2 : 1
+	Microsoft-Windows-Windows Defender : 49
+	SecurityCenter : 9
+	Microsoft-Windows-Eventlog : 2
+
+	Tasks: 
+	Authorization Policy Change : 31
+	File Share : 8
+	User Account Management : 21
+	Security Group Management : 86
+	Other Object Access Events : 4
+	System Integrity : 10
+	Security System Extension : 3
+	None : 73
+	Special Logon : 3
+	CM : 1
+	TM : 1
+	Process Creation : 1106
+	Log clear : 2
+	Logon : 3
+	Sensitive Privilege Use : 194
+	Group Membership : 3
+
+
+Services Analysis:
+
+	Running : 84
+	Stopped : 167
+
+
+Ports Analysis:
+
+	All : 24
+	TCP : 19
+	UDP : 5
+
+
+Prereq Analysis:
+
+	Met : 286
+	Not Met : 52
+
+
+Test Analysis:
+
+	Done : 232
+	Error : 17
+	Timeout : 20
+
+
+Scan Analysis:
+
+	Vulnerabilities:
+		Critical : 118
+		Medium : 11
+		High : 220
+
+	Informative Results:
+		None : 67

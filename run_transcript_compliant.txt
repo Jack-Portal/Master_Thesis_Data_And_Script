@@ -1,0 +1,1859 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20200415200706
+Username: DESKTOP-P8HTU4V\User
+RunAs User: DESKTOP-P8HTU4V\User
+Configuration Name: 
+Machine: DESKTOP-P8HTU4V (Microsoft Windows NT 10.0.18363.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 964
+PSVersion: 5.1.18362.145
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.18362.145
+BuildVersion: 10.0.18362.145
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\run_transcript_compliant.txt
+PS C:\Users\User> Invoke-AtomicTest All -TimeoutSeconds 15
+PathToAtomicsFolder = C:\AtomicRedTeam\atomics
+Highway to the danger zone, Executing All Atomic Tests!
+Do you wish to execute all tests?
+&Yes  &No  &Suspend
+Y
+Executing test:
+T1002-1 Compress Data for Exfiltration With PowerShell
+
+Done executing test:
+T1002-1 Compress Data for Exfiltration With PowerShell
+
+Executing test:
+T1002-2 Compress Data for Exfiltration With Rar
+
+Done executing test:
+T1002-2 Compress Data for Exfiltration With Rar
+
+Executing test:
+T1003-1 Powershell Mimikatz
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1003-1 Powershell Mimikatz
+
+Executing test:
+T1003-2 Gsecdump
+
+Done executing test:
+T1003-2 Gsecdump
+
+Executing test:
+T1003-3 Windows Credential Editor
+
+Done executing test:
+T1003-3 Windows Credential Editor
+
+Executing test:
+T1003-4 Registry dump of SAM, creds, and secrets
+
+Done executing test:
+T1003-4 Registry dump of SAM, creds, and secrets
+
+Executing test:
+T1003-5 Dump LSASS.exe Memory using ProcDump
+
+Done executing test:
+T1003-5 Dump LSASS.exe Memory using ProcDump
+
+Executing test:
+T1003-6 Dump LSASS.exe Memory using comsvcs.dll
+
+Done executing test:
+T1003-6 Dump LSASS.exe Memory using comsvcs.dll
+
+Executing test:
+T1003-7 Dump LSASS.exe Memory using direct system calls and API unhooking
+
+Done executing test:
+T1003-7 Dump LSASS.exe Memory using direct system calls and API unhooking
+
+Executing test:
+T1003-9 Offline Credential Theft With Mimikatz
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1003-9 Offline Credential Theft With Mimikatz
+
+Executing test:
+T1003-10 Dump Active Directory Database with NTDSUtil
+
+Done executing test:
+T1003-10 Dump Active Directory Database with NTDSUtil
+
+Executing test:
+T1003-11 Create Volume Shadow Copy with NTDS.dit
+
+Done executing test:
+T1003-11 Create Volume Shadow Copy with NTDS.dit
+
+Executing test:
+T1003-12 Copy NTDS.dit from Volume Shadow Copy
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1003-12 Copy NTDS.dit from Volume Shadow Copy
+
+Executing test:
+T1003-13 GPP Passwords (findstr)
+
+Done executing test:
+T1003-13 GPP Passwords (findstr)
+
+Executing test:
+T1003-14 GPP Passwords (Get-GPPPassword)
+
+Done executing test:
+T1003-14 GPP Passwords (Get-GPPPassword)
+
+Executing test:
+T1003-15 LSASS read with pypykatz
+
+Done executing test:
+T1003-15 LSASS read with pypykatz
+
+Executing test:
+T1003-16 Registry parse with pypykatz
+
+Done executing test:
+T1003-16 Registry parse with pypykatz
+
+Executing test:
+T1004-1 Winlogon Shell Key Persistence - PowerShell
+
+Done executing test:
+T1004-1 Winlogon Shell Key Persistence - PowerShell
+
+Executing test:
+T1004-2 Winlogon Userinit Key Persistence - PowerShell
+
+Done executing test:
+T1004-2 Winlogon Userinit Key Persistence - PowerShell
+
+Executing test:
+T1004-3 Winlogon Notify Key Logon Persistence - PowerShell
+
+Done executing test:
+T1004-3 Winlogon Notify Key Logon Persistence - PowerShell
+
+Executing test:
+T1007-1 System Service Discovery
+
+Done executing test:
+T1007-1 System Service Discovery
+
+Executing test:
+T1007-2 System Service Discovery - net.exe
+
+Done executing test:
+T1007-2 System Service Discovery - net.exe
+
+Executing test:
+T1010-1 List Process Main Windows - C# .NET
+
+Done executing test:
+T1010-1 List Process Main Windows - C# .NET
+
+Executing test:
+T1012-1 Query Registry
+
+Done executing test:
+T1012-1 Query Registry
+
+Executing test:
+T1014-3 Windows Signed Driver Rootkit Test
+
+Done executing test:
+T1014-3 Windows Signed Driver Rootkit Test
+
+Executing test:
+T1015-1 Attaches Command Prompt as a Debugger to a List of Target Processes
+
+Done executing test:
+T1015-1 Attaches Command Prompt as a Debugger to a List of Target Processes
+
+Executing test:
+T1016-1 System Network Configuration Discovery
+
+Done executing test:
+T1016-1 System Network Configuration Discovery
+
+Executing test:
+T1016-2 List Windows Firewall Rules
+
+Done executing test:
+T1016-2 List Windows Firewall Rules
+
+Executing test:
+T1016-4 System Network Configuration Discovery (TrickBot Style)
+
+Done executing test:
+T1016-4 System Network Configuration Discovery (TrickBot Style)
+
+Executing test:
+T1016-5 List Open Egress Ports
+
+Done executing test:
+T1016-5 List Open Egress Ports
+
+Executing test:
+T1018-1 Remote System Discovery - net
+
+Done executing test:
+T1018-1 Remote System Discovery - net
+
+Executing test:
+T1018-2 Remote System Discovery - net group Domain Computers
+
+Done executing test:
+T1018-2 Remote System Discovery - net group Domain Computers
+
+Executing test:
+T1018-3 Remote System Discovery - nltest
+
+Done executing test:
+T1018-3 Remote System Discovery - nltest
+
+Executing test:
+T1018-4 Remote System Discovery - ping sweep
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1018-4 Remote System Discovery - ping sweep
+
+Executing test:
+T1018-5 Remote System Discovery - arp
+
+Done executing test:
+T1018-5 Remote System Discovery - arp
+
+Executing test:
+T1018-8 Remote System Discovery - nslookup
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1018-8 Remote System Discovery - nslookup
+
+Executing test:
+T1022-2 Compress Data and lock with password for Exfiltration with winrar
+
+Done executing test:
+T1022-2 Compress Data and lock with password for Exfiltration with winrar
+
+Executing test:
+T1022-3 Compress Data and lock with password for Exfiltration with winzip
+
+Done executing test:
+T1022-3 Compress Data and lock with password for Exfiltration with winzip
+
+Executing test:
+T1022-4 Compress Data and lock with password for Exfiltration with 7zip
+
+Done executing test:
+T1022-4 Compress Data and lock with password for Exfiltration with 7zip
+
+Executing test:
+T1023-1 Shortcut Modification
+
+Done executing test:
+T1023-1 Shortcut Modification
+
+Executing test:
+T1023-2 Create shortcut to cmd in startup folders
+
+Done executing test:
+T1023-2 Create shortcut to cmd in startup folders
+
+Executing test:
+T1027-2 Execute base64-encoded PowerShell
+
+Done executing test:
+T1027-2 Execute base64-encoded PowerShell
+
+Executing test:
+T1027-3 Execute base64-encoded PowerShell from Windows Registry
+
+Done executing test:
+T1027-3 Execute base64-encoded PowerShell from Windows Registry
+
+Executing test:
+T1028-1 Enable Windows Remote Management
+
+Done executing test:
+T1028-1 Enable Windows Remote Management
+
+Executing test:
+T1028-2 PowerShell Lateral Movement
+
+Done executing test:
+T1028-2 PowerShell Lateral Movement
+
+Executing test:
+T1028-3 WMIC Process Call Create
+
+Done executing test:
+T1028-3 WMIC Process Call Create
+
+Executing test:
+T1028-4 Psexec
+
+Done executing test:
+T1028-4 Psexec
+
+Executing test:
+T1028-5 Invoke-Command
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1028-5 Invoke-Command
+
+Executing test:
+T1031-1 Modify Fax service to run PowerShell
+
+Done executing test:
+T1031-1 Modify Fax service to run PowerShell
+
+Executing test:
+T1032-1 OpenSSL C2
+
+Done executing test:
+T1032-1 OpenSSL C2
+
+Executing test:
+T1033-1 System Owner/User Discovery
+
+Done executing test:
+T1033-1 System Owner/User Discovery
+
+Executing test:
+T1035-1 Execute a Command as a Service
+
+Done executing test:
+T1035-1 Execute a Command as a Service
+
+Executing test:
+T1035-2 Use PsExec to execute a command on a remote host
+
+Done executing test:
+T1035-2 Use PsExec to execute a command on a remote host
+
+Executing test:
+T1036-1 Masquerading as Windows LSASS process
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1036-1 Masquerading as Windows LSASS process
+
+Executing test:
+T1036-3 Masquerading - cscript.exe running as notepad.exe
+
+Done executing test:
+T1036-3 Masquerading - cscript.exe running as notepad.exe
+
+Executing test:
+T1036-4 Masquerading - wscript.exe running as svchost.exe
+
+Done executing test:
+T1036-4 Masquerading - wscript.exe running as svchost.exe
+
+Executing test:
+T1036-5 Masquerading - powershell.exe running as taskhostw.exe
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1036-5 Masquerading - powershell.exe running as taskhostw.exe
+
+Executing test:
+T1036-6 Masquerading - non-windows exe running as windows exe
+
+Done executing test:
+T1036-6 Masquerading - non-windows exe running as windows exe
+
+Executing test:
+T1036-7 Masquerading - windows exe running as different windows exe
+
+Done executing test:
+T1036-7 Masquerading - windows exe running as different windows exe
+
+Executing test:
+T1036-8 Malicious process Masquerading as LSM.exe
+
+Done executing test:
+T1036-8 Malicious process Masquerading as LSM.exe
+
+Executing test:
+T1037-1 Logon Scripts
+
+Done executing test:
+T1037-1 Logon Scripts
+
+Executing test:
+T1037-2 Scheduled Task Startup Script
+
+Done executing test:
+T1037-2 Scheduled Task Startup Script
+
+Executing test:
+T1037-4 Supicious vbs file run from startup Folder
+
+Done executing test:
+T1037-4 Supicious vbs file run from startup Folder
+
+Executing test:
+T1037-5 Supicious jse file run from startup Folder
+
+Done executing test:
+T1037-5 Supicious jse file run from startup Folder
+
+Executing test:
+T1037-6 Supicious bat file run from startup Folder
+
+Done executing test:
+T1037-6 Supicious bat file run from startup Folder
+
+Executing test:
+T1038-1 DLL Search Order Hijacking - amsi.dll
+
+Done executing test:
+T1038-1 DLL Search Order Hijacking - amsi.dll
+
+Executing test:
+T1040-3 Packet Capture Windows Command Prompt
+
+Done executing test:
+T1040-3 Packet Capture Windows Command Prompt
+
+Executing test:
+T1040-4 Packet Capture PowerShell
+
+Done executing test:
+T1040-4 Packet Capture PowerShell
+
+Executing test:
+T1042-1 Change Default File Association
+
+Done executing test:
+T1042-1 Change Default File Association
+
+Executing test:
+T1044-1 File System Permissions Weakness
+
+Done executing test:
+T1044-1 File System Permissions Weakness
+
+Executing test:
+T1047-1 WMI Reconnaissance Users
+
+Done executing test:
+T1047-1 WMI Reconnaissance Users
+
+Executing test:
+T1047-2 WMI Reconnaissance Processes
+
+Done executing test:
+T1047-2 WMI Reconnaissance Processes
+
+Executing test:
+T1047-3 WMI Reconnaissance Software
+
+Done executing test:
+T1047-3 WMI Reconnaissance Software
+
+Executing test:
+T1047-4 WMI Reconnaissance List Remote Services
+
+Done executing test:
+T1047-4 WMI Reconnaissance List Remote Services
+
+Executing test:
+T1047-5 WMI Execute Local Process
+
+Done executing test:
+T1047-5 WMI Execute Local Process
+
+Executing test:
+T1047-6 WMI Execute Remote Process
+
+Done executing test:
+T1047-6 WMI Execute Remote Process
+
+Executing test:
+T1048-4 Exfiltration Over Alternative Protocol - ICMP
+
+Done executing test:
+T1048-4 Exfiltration Over Alternative Protocol - ICMP
+
+Executing test:
+T1049-1 System Network Connections Discovery
+
+Done executing test:
+T1049-1 System Network Connections Discovery
+
+Executing test:
+T1049-2 System Network Connections Discovery with PowerShell
+
+Done executing test:
+T1049-2 System Network Connections Discovery with PowerShell
+
+Executing test:
+T1050-1 Service Installation CMD
+
+Done executing test:
+T1050-1 Service Installation CMD
+
+Executing test:
+T1050-2 Service Installation PowerShell
+
+Done executing test:
+T1050-2 Service Installation PowerShell
+
+Executing test:
+T1053-1 At.exe Scheduled task
+
+Done executing test:
+T1053-1 At.exe Scheduled task
+
+Executing test:
+T1053-2 Scheduled task Local
+
+Done executing test:
+T1053-2 Scheduled task Local
+
+Executing test:
+T1053-3 Scheduled task Remote
+
+Done executing test:
+T1053-3 Scheduled task Remote
+
+Executing test:
+T1053-4 Powershell Cmdlet Scheduled Task
+
+Done executing test:
+T1053-4 Powershell Cmdlet Scheduled Task
+
+Executing test:
+T1055-1 Process Injection via mavinject.exe
+
+Done executing test:
+T1055-1 Process Injection via mavinject.exe
+
+Executing test:
+T1055-4 Process Injection via C#
+
+Done executing test:
+T1055-4 Process Injection via C#
+
+Executing test:
+T1055-5 svchost writing a file to a UNC path
+
+Done executing test:
+T1055-5 svchost writing a file to a UNC path
+
+Executing test:
+T1056-1 Input Capture
+
+Done executing test:
+T1056-1 Input Capture
+
+Executing test:
+T1057-2 Process Discovery - tasklist
+
+Done executing test:
+T1057-2 Process Discovery - tasklist
+
+Executing test:
+T1058-1 Service Registry Permissions Weakness
+
+Done executing test:
+T1058-1 Service Registry Permissions Weakness
+
+Executing test:
+T1060-1 Reg Key Run
+
+Done executing test:
+T1060-1 Reg Key Run
+
+Executing test:
+T1060-2 Reg Key RunOnce
+
+Done executing test:
+T1060-2 Reg Key RunOnce
+
+Executing test:
+T1060-3 PowerShell Registry RunOnce
+
+Done executing test:
+T1060-3 PowerShell Registry RunOnce
+
+Executing test:
+T1062-1 Installing Hyper-V Feature
+
+Done executing test:
+T1062-1 Installing Hyper-V Feature
+
+Executing test:
+T1063-1 Security Software Discovery
+
+Done executing test:
+T1063-1 Security Software Discovery
+
+Executing test:
+T1063-2 Security Software Discovery - powershell
+
+Done executing test:
+T1063-2 Security Software Discovery - powershell
+
+Executing test:
+T1063-4 Security Software Discovery - Sysmon Service
+
+Done executing test:
+T1063-4 Security Software Discovery - Sysmon Service
+
+Executing test:
+T1063-5 Security Software Discovery - AV Discovery via WMI
+
+Done executing test:
+T1063-5 Security Software Discovery - AV Discovery via WMI
+
+Executing test:
+T1064-2 Create and Execute Batch Script
+
+Done executing test:
+T1064-2 Create and Execute Batch Script
+
+Executing test:
+T1065-1 Testing usage of uncommonly used port with PowerShell
+
+Done executing test:
+T1065-1 Testing usage of uncommonly used port with PowerShell
+
+Executing test:
+T1069-2 Basic Permission Groups Discovery Windows
+
+Done executing test:
+T1069-2 Basic Permission Groups Discovery Windows
+
+Executing test:
+T1069-3 Permission Groups Discovery PowerShell
+
+Done executing test:
+T1069-3 Permission Groups Discovery PowerShell
+
+Executing test:
+T1069-4 Elevated group enumeration using net group
+
+Done executing test:
+T1069-4 Elevated group enumeration using net group
+
+Executing test:
+T1070-1 Clear Logs
+
+Done executing test:
+T1070-1 Clear Logs
+
+Executing test:
+T1070-2 FSUtil
+
+Done executing test:
+T1070-2 FSUtil
+
+Executing test:
+T1070-6 Delete System Logs Using PowerShell
+
+Done executing test:
+T1070-6 Delete System Logs Using PowerShell
+
+Executing test:
+T1070-7 Delete System Logs Using Clear-EventLogId
+
+Done executing test:
+T1070-7 Delete System Logs Using Clear-EventLogId
+
+Executing test:
+T1071-1 Malicious User Agents - Powershell
+
+Done executing test:
+T1071-1 Malicious User Agents - Powershell
+
+Executing test:
+T1071-2 Malicious User Agents - CMD
+
+Done executing test:
+T1071-2 Malicious User Agents - CMD
+
+Executing test:
+T1071-4 DNS Large Query Volume
+
+Done executing test:
+T1071-4 DNS Large Query Volume
+
+Executing test:
+T1071-5 DNS Regular Beaconing
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1071-5 DNS Regular Beaconing
+
+Executing test:
+T1071-6 DNS Long Domain Query
+
+Done executing test:
+T1071-6 DNS Long Domain Query
+
+Executing test:
+T1071-7 DNS C2
+
+Done executing test:
+T1071-7 DNS C2
+
+Executing test:
+T1071-8 OSTap Payload Download
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1071-8 OSTap Payload Download
+
+Executing test:
+T1073-1 DLL Side-Loading using the Notepad++ GUP.exe binary
+
+Done executing test:
+T1073-1 DLL Side-Loading using the Notepad++ GUP.exe binary
+
+Executing test:
+T1074-1 Stage data from Discovery.bat
+
+Done executing test:
+T1074-1 Stage data from Discovery.bat
+
+Executing test:
+T1074-3 Zip a Folder with PowerShell for Staging in Temp
+
+Done executing test:
+T1074-3 Zip a Folder with PowerShell for Staging in Temp
+
+Executing test:
+T1075-1 Mimikatz Pass the Hash
+
+Done executing test:
+T1075-1 Mimikatz Pass the Hash
+
+Executing test:
+T1075-2 crackmapexec Pass the Hash
+
+Done executing test:
+T1075-2 crackmapexec Pass the Hash
+
+Executing test:
+T1076-1 RDP hijacking
+
+Done executing test:
+T1076-1 RDP hijacking
+
+Executing test:
+T1076-2 RDPto-DomainController
+
+Done executing test:
+T1076-2 RDPto-DomainController
+
+Executing test:
+T1077-1 Map admin share
+
+Done executing test:
+T1077-1 Map admin share
+
+Executing test:
+T1077-2 Map Admin Share PowerShell
+
+Done executing test:
+T1077-2 Map Admin Share PowerShell
+
+Executing test:
+T1077-3 Copy and Execute File with PsExec
+
+Done executing test:
+T1077-3 Copy and Execute File with PsExec
+
+Executing test:
+T1077-4 Execute command writing output to local Admin Share
+
+Done executing test:
+T1077-4 Execute command writing output to local Admin Share
+
+Executing test:
+T1081-3 Extracting passwords with findstr
+
+Done executing test:
+T1081-3 Extracting passwords with findstr
+
+Executing test:
+T1081-4 Access unattend.xml
+
+Done executing test:
+T1081-4 Access unattend.xml
+
+Executing test:
+T1082-1 System Information Discovery
+
+Done executing test:
+T1082-1 System Information Discovery
+
+Executing test:
+T1082-6 Hostname Discovery (Windows)
+
+Done executing test:
+T1082-6 Hostname Discovery (Windows)
+
+Executing test:
+T1082-8 Windows MachineGUID Discovery
+
+Done executing test:
+T1082-8 Windows MachineGUID Discovery
+
+Executing test:
+T1083-1 File and Directory Discovery (cmd.exe)
+
+Done executing test:
+T1083-1 File and Directory Discovery (cmd.exe)
+
+Executing test:
+T1083-2 File and Directory Discovery (PowerShell)
+
+Done executing test:
+T1083-2 File and Directory Discovery (PowerShell)
+
+Executing test:
+T1084-1 Persistence via WMI Event Subscription
+
+Done executing test:
+T1084-1 Persistence via WMI Event Subscription
+
+Executing test:
+T1085-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1085-1 Rundll32 execute JavaScript Remote Payload With GetObject
+
+Executing test:
+T1085-2 Rundll32 execute VBscript command
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1085-2 Rundll32 execute VBscript command
+
+Executing test:
+T1085-3 Rundll32 advpack.dll Execution
+
+Done executing test:
+T1085-3 Rundll32 advpack.dll Execution
+
+Executing test:
+T1085-4 Rundll32 ieadvpack.dll Execution
+
+Done executing test:
+T1085-4 Rundll32 ieadvpack.dll Execution
+
+Executing test:
+T1085-5 Rundll32 syssetup.dll Execution
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1085-5 Rundll32 syssetup.dll Execution
+
+Executing test:
+T1085-6 Rundll32 setupapi.dll Execution
+
+Done executing test:
+T1085-6 Rundll32 setupapi.dll Execution
+
+Executing test:
+T1086-1 Mimikatz
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1086-1 Mimikatz
+
+Executing test:
+T1086-2 BloodHound
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1086-2 BloodHound
+
+Executing test:
+T1086-3 Obfuscation Tests
+
+Done executing test:
+T1086-3 Obfuscation Tests
+
+Executing test:
+T1086-4 Mimikatz - Cradlecraft PsSendKeys
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1086-4 Mimikatz - Cradlecraft PsSendKeys
+
+Executing test:
+T1086-5 Invoke-AppPathBypass
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1086-5 Invoke-AppPathBypass
+
+Executing test:
+T1086-6 Powershell MsXml COM object - no prompt
+
+Done executing test:
+T1086-6 Powershell MsXml COM object - no prompt
+
+Executing test:
+T1086-7 Powershell MsXml COM object - with prompt
+
+Done executing test:
+T1086-7 Powershell MsXml COM object - with prompt
+
+Executing test:
+T1086-8 Powershell XML requests
+
+Done executing test:
+T1086-8 Powershell XML requests
+
+Executing test:
+T1086-9 Powershell invoke mshta.exe download
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1086-9 Powershell invoke mshta.exe download
+
+Executing test:
+T1086-11 PowerShell Fileless Script Execution
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1086-11 PowerShell Fileless Script Execution
+
+Executing test:
+T1086-12 PowerShell Downgrade Attack
+
+Done executing test:
+T1086-12 PowerShell Downgrade Attack
+
+Executing test:
+T1086-13 NTFS Alternate Data Stream Access
+
+Done executing test:
+T1086-13 NTFS Alternate Data Stream Access
+
+Executing test:
+T1087-8 Enumerate all accounts
+
+Done executing test:
+T1087-8 Enumerate all accounts
+
+Executing test:
+T1087-9 Enumerate all accounts via PowerShell
+
+Done executing test:
+T1087-9 Enumerate all accounts via PowerShell
+
+Executing test:
+T1087-10 Enumerate logged on users
+
+Done executing test:
+T1087-10 Enumerate logged on users
+
+Executing test:
+T1087-11 Enumerate logged on users via PowerShell
+
+Done executing test:
+T1087-11 Enumerate logged on users via PowerShell
+
+Executing test:
+T1088-1 Bypass UAC using Event Viewer (cmd)
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1088-1 Bypass UAC using Event Viewer (cmd)
+
+Executing test:
+T1088-2 Bypass UAC using Event Viewer (PowerShell)
+
+Done executing test:
+T1088-2 Bypass UAC using Event Viewer (PowerShell)
+
+Executing test:
+T1088-3 Bypass UAC using Fodhelper
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1088-3 Bypass UAC using Fodhelper
+
+Executing test:
+T1088-4 Bypass UAC using Fodhelper - PowerShell
+
+Done executing test:
+T1088-4 Bypass UAC using Fodhelper - PowerShell
+
+Executing test:
+T1088-5 Bypass UAC using ComputerDefaults (PowerShell)
+
+Done executing test:
+T1088-5 Bypass UAC using ComputerDefaults (PowerShell)
+
+Executing test:
+T1088-6 Bypass UAC by Mocking Trusted Directories
+
+Done executing test:
+T1088-6 Bypass UAC by Mocking Trusted Directories
+
+Executing test:
+T1089-8 Unload Sysmon Filter Driver
+
+Done executing test:
+T1089-8 Unload Sysmon Filter Driver
+
+Executing test:
+T1089-9 Disable Windows IIS HTTP Logging
+
+Done executing test:
+T1089-9 Disable Windows IIS HTTP Logging
+
+Executing test:
+T1089-10 Uninstall Sysmon
+
+Done executing test:
+T1089-10 Uninstall Sysmon
+
+Executing test:
+T1089-11 AMSI Bypass - AMSI InitFailed
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1089-11 AMSI Bypass - AMSI InitFailed
+
+Executing test:
+T1089-12 AMSI Bypass - Remove AMSI Provider Reg Key
+
+Done executing test:
+T1089-12 AMSI Bypass - Remove AMSI Provider Reg Key
+
+Executing test:
+T1089-13 Disable Arbitrary Security Windows Service
+
+Done executing test:
+T1089-13 Disable Arbitrary Security Windows Service
+
+Executing test:
+T1089-14 Disable PowerShell Script Block Logging
+
+Done executing test:
+T1089-14 Disable PowerShell Script Block Logging
+
+Executing test:
+T1089-15 PowerShell Bypass of AntiMalware Scripting Interface
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1089-15 PowerShell Bypass of AntiMalware Scripting Interface
+
+Executing test:
+T1089-16 Tamper with Windows Defender ATP PowerShell
+
+Done executing test:
+T1089-16 Tamper with Windows Defender ATP PowerShell
+
+Executing test:
+T1089-17 Tamper with Windows Defender Command Prompt
+
+Done executing test:
+T1089-17 Tamper with Windows Defender Command Prompt
+
+Executing test:
+T1089-18 Tamper with Windows Defender Registry
+
+Done executing test:
+T1089-18 Tamper with Windows Defender Registry
+
+Executing test:
+T1089-19 Disable Microft Office Security Features
+
+Done executing test:
+T1089-19 Disable Microft Office Security Features
+
+Executing test:
+T1089-20 Remove Windows Defender Definition Files
+
+Done executing test:
+T1089-20 Remove Windows Defender Definition Files
+
+Executing test:
+T1090-2 portproxy reg key
+
+Done executing test:
+T1090-2 portproxy reg key
+
+Executing test:
+T1093-1 Process Hollowing using PowerShell
+
+Done executing test:
+T1093-1 Process Hollowing using PowerShell
+
+Executing test:
+T1095-1 ICMP C2
+
+Done executing test:
+T1095-1 ICMP C2
+
+Executing test:
+T1095-2 Netcat C2
+
+Done executing test:
+T1095-2 Netcat C2
+
+Executing test:
+T1095-3 Powercat C2
+
+Done executing test:
+T1095-3 Powercat C2
+
+Executing test:
+T1096-1 Alternate Data Streams (ADS)
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1096-1 Alternate Data Streams (ADS)
+
+Executing test:
+T1096-2 Store file in Alternate Data Stream (ADS)
+
+Done executing test:
+T1096-2 Store file in Alternate Data Stream (ADS)
+
+Executing test:
+T1097-1 Mimikatz Kerberos Ticket Attack
+
+Done executing test:
+T1097-1 Mimikatz Kerberos Ticket Attack
+
+Executing test:
+T1098-1 Admin Account Manipulate
+
+Done executing test:
+T1098-1 Admin Account Manipulate
+
+Executing test:
+T1099-5 Windows - Modify file creation timestamp with PowerShell
+
+Done executing test:
+T1099-5 Windows - Modify file creation timestamp with PowerShell
+
+Executing test:
+T1099-6 Windows - Modify file last modified timestamp with PowerShell
+
+Done executing test:
+T1099-6 Windows - Modify file last modified timestamp with PowerShell
+
+Executing test:
+T1099-7 Windows - Modify file last access timestamp with PowerShell
+
+Done executing test:
+T1099-7 Windows - Modify file last access timestamp with PowerShell
+
+Executing test:
+T1100-1 Web Shell Written to Disk
+
+Done executing test:
+T1100-1 Web Shell Written to Disk
+
+Executing test:
+T1101-1 Modify SSP configuration in registry
+
+Done executing test:
+T1101-1 Modify SSP configuration in registry
+
+Executing test:
+T1102-1 Reach out to C2 Pointer URLs via command_prompt
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1102-1 Reach out to C2 Pointer URLs via command_prompt
+
+Executing test:
+T1102-2 Reach out to C2 Pointer URLs via powershell
+
+Done executing test:
+T1102-2 Reach out to C2 Pointer URLs via powershell
+
+Executing test:
+T1103-1 Install AppInit Shim
+
+Done executing test:
+T1103-1 Install AppInit Shim
+
+Executing test:
+T1105-7 certutil download (urlcache)
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1105-7 certutil download (urlcache)
+
+Executing test:
+T1105-8 certutil download (verifyctl)
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1105-8 certutil download (verifyctl)
+
+Executing test:
+T1105-9 Windows - BITSAdmin BITS Download
+
+Done executing test:
+T1105-9 Windows - BITSAdmin BITS Download
+
+Executing test:
+T1105-10 Windows - PowerShell Download
+
+Done executing test:
+T1105-10 Windows - PowerShell Download
+
+Executing test:
+T1105-11 OSTAP Worming Activity
+
+Done executing test:
+T1105-11 OSTAP Worming Activity
+
+Executing test:
+T1107-4 Delete a single file - Windows cmd
+
+Done executing test:
+T1107-4 Delete a single file - Windows cmd
+
+Executing test:
+T1107-5 Delete an entire folder - Windows cmd
+
+Done executing test:
+T1107-5 Delete an entire folder - Windows cmd
+
+Executing test:
+T1107-6 Delete a single file - Windows PowerShell
+
+Done executing test:
+T1107-6 Delete a single file - Windows PowerShell
+
+Executing test:
+T1107-7 Delete an entire folder - Windows PowerShell
+
+Done executing test:
+T1107-7 Delete an entire folder - Windows PowerShell
+
+Executing test:
+T1107-9 Delete-PrefetchFile
+
+Done executing test:
+T1107-9 Delete-PrefetchFile
+
+Executing test:
+T1107-10 Delete TeamViewer Log Files
+
+Done executing test:
+T1107-10 Delete TeamViewer Log Files
+
+Executing test:
+T1110-1 Brute Force Credentials
+
+Done executing test:
+T1110-1 Brute Force Credentials
+
+Executing test:
+T1112-1 Modify Registry of Current User Profile - cmd
+
+Done executing test:
+T1112-1 Modify Registry of Current User Profile - cmd
+
+Executing test:
+T1112-2 Modify Registry of Local Machine - cmd
+
+Done executing test:
+T1112-2 Modify Registry of Local Machine - cmd
+
+Executing test:
+T1112-3 Modify registry to store logon credentials
+
+Done executing test:
+T1112-3 Modify registry to store logon credentials
+
+Executing test:
+T1112-4 Add domain to Trusted sites Zone
+
+Done executing test:
+T1112-4 Add domain to Trusted sites Zone
+
+Executing test:
+T1112-5 Javascript in registry
+
+Done executing test:
+T1112-5 Javascript in registry
+
+Executing test:
+T1114-1 T1114 Email Collection with PowerShell
+
+Done executing test:
+T1114-1 T1114 Email Collection with PowerShell
+
+Executing test:
+T1115-1 Utilize Clipboard to store or execute commands from
+
+Done executing test:
+T1115-1 Utilize Clipboard to store or execute commands from
+
+Executing test:
+T1115-2 PowerShell
+
+Done executing test:
+T1115-2 PowerShell
+
+Executing test:
+T1117-1 Regsvr32 local COM scriptlet execution
+
+Done executing test:
+T1117-1 Regsvr32 local COM scriptlet execution
+
+Executing test:
+T1117-2 Regsvr32 remote COM scriptlet execution
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1117-2 Regsvr32 remote COM scriptlet execution
+
+Executing test:
+T1117-3 Regsvr32 local DLL execution
+
+Done executing test:
+T1117-3 Regsvr32 local DLL execution
+
+Executing test:
+T1118-1 CheckIfInstallable method call
+
+Done executing test:
+T1118-1 CheckIfInstallable method call
+
+Executing test:
+T1118-2 InstallHelper method call
+
+Done executing test:
+T1118-2 InstallHelper method call
+
+Executing test:
+T1118-3 InstallUtil class constructor method call
+
+Done executing test:
+T1118-3 InstallUtil class constructor method call
+
+Executing test:
+T1118-4 InstallUtil Install method call
+
+Done executing test:
+T1118-4 InstallUtil Install method call
+
+Executing test:
+T1118-5 InstallUtil Uninstall method call - /U variant
+
+Done executing test:
+T1118-5 InstallUtil Uninstall method call - /U variant
+
+Executing test:
+T1118-6 InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
+
+Done executing test:
+T1118-6 InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
+
+Executing test:
+T1118-7 InstallUtil HelpText method call
+
+Done executing test:
+T1118-7 InstallUtil HelpText method call
+
+Executing test:
+T1118-8 InstallUtil evasive invocation
+
+Done executing test:
+T1118-8 InstallUtil evasive invocation
+
+Executing test:
+T1119-1 Automated Collection Command Prompt
+
+Done executing test:
+T1119-1 Automated Collection Command Prompt
+
+Executing test:
+T1119-2 Automated Collection PowerShell
+
+Done executing test:
+T1119-2 Automated Collection PowerShell
+
+Executing test:
+T1119-3 Recon information for export with PowerShell
+
+Done executing test:
+T1119-3 Recon information for export with PowerShell
+
+Executing test:
+T1119-4 Recon information for export with Command Prompt
+
+Done executing test:
+T1119-4 Recon information for export with Command Prompt
+
+Executing test:
+T1121-1 Regasm Uninstall Method Call Test
+
+Done executing test:
+T1121-1 Regasm Uninstall Method Call Test
+
+Executing test:
+T1121-2 Regsvs Uninstall Method Call Test
+
+Done executing test:
+T1121-2 Regsvs Uninstall Method Call Test
+
+Executing test:
+T1123-1 using device audio capture commandlet
+
+Done executing test:
+T1123-1 using device audio capture commandlet
+
+Executing test:
+T1124-1 System Time Discovery
+
+Done executing test:
+T1124-1 System Time Discovery
+
+Executing test:
+T1124-2 System Time Discovery - PowerShell
+
+Done executing test:
+T1124-2 System Time Discovery - PowerShell
+
+Executing test:
+T1126-1 Add Network Share
+
+Done executing test:
+T1126-1 Add Network Share
+
+Executing test:
+T1126-2 Remove Network Share
+
+Done executing test:
+T1126-2 Remove Network Share
+
+Executing test:
+T1126-3 Remove Network Share PowerShell
+
+Done executing test:
+T1126-3 Remove Network Share PowerShell
+
+Executing test:
+T1127-1 MSBuild Bypass Using Inline Tasks
+
+Done executing test:
+T1127-1 MSBuild Bypass Using Inline Tasks
+
+Executing test:
+T1128-1 Netsh Helper DLL Registration
+
+Done executing test:
+T1128-1 Netsh Helper DLL Registration
+
+Executing test:
+T1135-2 Network Share Discovery command prompt
+
+Done executing test:
+T1135-2 Network Share Discovery command prompt
+
+Executing test:
+T1135-3 Network Share Discovery PowerShell
+
+Done executing test:
+T1135-3 Network Share Discovery PowerShell
+
+Executing test:
+T1135-4 View available share drives
+
+Done executing test:
+T1135-4 View available share drives
+
+Executing test:
+T1136-3 Create a new user in a command prompt
+
+Done executing test:
+T1136-3 Create a new user in a command prompt
+
+Executing test:
+T1136-4 Create a new user in PowerShell
+
+Done executing test:
+T1136-4 Create a new user in PowerShell
+
+Executing test:
+T1138-1 Application Shim Installation
+
+Done executing test:
+T1138-1 Application Shim Installation
+
+Executing test:
+T1138-2 New shim database files created in the default shim database directory
+
+Done executing test:
+T1138-2 New shim database files created in the default shim database directory
+
+Executing test:
+T1138-3 Registry key creation and/or modification events for SDB
+
+Done executing test:
+T1138-3 Registry key creation and/or modification events for SDB
+
+Executing test:
+T1140-1 Deobfuscate/Decode Files Or Information
+
+Done executing test:
+T1140-1 Deobfuscate/Decode Files Or Information
+
+Executing test:
+T1140-2 Certutil Rename and Decode
+
+Done executing test:
+T1140-2 Certutil Rename and Decode
+
+Executing test:
+T1141-2 PowerShell - Prompt User for Password
+
+Done executing test:
+T1141-2 PowerShell - Prompt User for Password
+
+Executing test:
+T1143-1 Hidden Window
+
+Done executing test:
+T1143-1 Hidden Window
+
+Executing test:
+T1145-1 Private Keys
+
+Done executing test:
+T1145-1 Private Keys
+
+Executing test:
+T1158-3 Create Windows System File with Attrib
+
+Done executing test:
+T1158-3 Create Windows System File with Attrib
+
+Executing test:
+T1158-4 Create Windows Hidden File with Attrib
+
+Done executing test:
+T1158-4 Create Windows Hidden File with Attrib
+
+Executing test:
+T1158-8 Create ADS command prompt
+
+Done executing test:
+T1158-8 Create ADS command prompt
+
+Executing test:
+T1158-9 Create ADS PowerShell
+
+Done executing test:
+T1158-9 Create ADS PowerShell
+
+Executing test:
+T1170-1 Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject
+
+PS C:\Users\User> TerminatingError(Start-Process): "This command cannot be run due to the error: Access is denied."
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+Start-Process : This command cannot be run due to the error: Access is denied.
+At C:\AtomicRedTeam\invoke-atomicredteam\Private\Invoke-Process.ps1:31 char:28
++ ...  $process = Start-Process -FilePath $FileName -ArgumentList $Argument ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+Done executing test:
+T1170-1 Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject
+
+Executing test:
+T1170-2 Mshta calls a local VBScript file to launch notepad.exe
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1170-2 Mshta calls a local VBScript file to launch notepad.exe
+
+Executing test:
+T1170-3 Mshta executes VBScript to execute malicious command
+
+Done executing test:
+T1170-3 Mshta executes VBScript to execute malicious command
+
+Executing test:
+T1170-4 Mshta Executes Remote HTML Application (HTA)
+
+Done executing test:
+T1170-4 Mshta Executes Remote HTML Application (HTA)
+
+Executing test:
+T1173-2 Execute PowerShell script via Word DDE
+
+Done executing test:
+T1173-2 Execute PowerShell script via Word DDE
+
+Executing test:
+T1174-1 Install and Register Password Filter DLL
+
+Process Timed out after 15 seconds, use '-TimeoutSeconds' to specify a different timeout
+Done executing test:
+T1174-1 Install and Register Password Filter DLL
+
+Executing test:
+T1179-1 Hook PowerShell TLS Encrypt/Decrypt Messages
+
+Done executing test:
+T1179-1 Hook PowerShell TLS Encrypt/Decrypt Messages
+
+Executing test:
+T1180-1 Set Arbitrary Binary as Screensaver
+
