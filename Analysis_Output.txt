@@ -1,0 +1,67 @@
+Log Analysis:
+	Events : 171
+	Containing Atomic : 16
+
+	Levels:
+	Error : 2
+	Warning : 37
+	Information : 132
+
+	Sources:
+	Service Control Manager : 5
+	Microsoft Fax : 2
+	Microsoft-Windows-Security-Auditing : 102
+	Microsoft-Windows-MSDTC 2 : 1
+	Microsoft-Windows-Complus : 1
+	Microsoft-Windows-DistributedCOM : 15
+	Microsoft-Windows-MSDTC Client 2 : 1
+	Microsoft-Windows-Kernel-General : 1
+	Microsoft-Windows-Windows Defender : 32
+	SecurityCenter : 11
+
+	Tasks: 
+	CM : 1
+	Special Logon : 4
+	Security Group Management : 79
+	Logon : 4
+	User Account Management : 15
+	TM : 1
+	None : 65
+	-1 : 2
+
+
+Services Analysis:
+
+	Running : 101
+	Stopped : 150
+
+
+Ports Analysis:
+
+	All : 36
+	TCP : 20
+	UDP : 16
+
+
+Prereq Analysis:
+
+	Met : 208
+	Not Met : 123
+
+
+Test Analysis:
+
+	Done : 222
+	Error : 18
+	Timeout : 21
+
+
+Scan Analysis:
+
+	Vulnerabilities:
+		Critical : 118
+		Medium : 12
+		High : 221
+
+	Informative Results:
+		None : 120
