@@ -69,7 +69,7 @@ Scan Analysis:
 	Vulnerabilities:
 		Critical : 118
 		Medium : 11
-		High : 220
+		High : 220 (+1 because one vulnerability changed between the first set of experiments and this one)
 
 	Informative Results:
 		None : 67
